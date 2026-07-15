@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITStart — тест-драйв професії Manual QA</title>
+  <meta name="description" content="За 7 днів спробуйте професію Manual QA на практиці: протестуйте сайт, оформіть баг-репорт і зрозумійте, чи підходить вам робота тестувальника.">
+  <meta name="theme-color" content="#0b0f18">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ITStart">
+  <meta property="og:title" content="ITStart — тест-драйв професії Manual QA">
+  <meta property="og:description" content="Знайдіть перші баги, виконайте реальні QA-задачі та перевірте професію до великого курсу.">
+  <meta property="og:url" content="https://itstart.com.ua/">
+  <meta property="og:image" content="https://itstart.com.ua/assets/og-cover.svg">
+  <link rel="canonical" href="https://itstart.com.ua/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Meta Pixel: вставте свій Pixel ID перед запуском.
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');
+  </script>
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#main">До основного контенту</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ITStart — на головну">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-hidden="true">
+          <rect x="2" y="2" width="44" height="44" rx="13" fill="currentColor"/>
+          <path d="M14 16h8v4h-2v12h2v4h-8v-4h2V20h-2v-4Zm11 0h13v4h-4.5v16h-4V20H25v-4Z" fill="#0b0f18"/>
+        </svg>
+        <span class="brand-word">IT<span>START</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основна навігація">
+        <a href="#about">Про професію</a>
+        <a href="#program">Програма</a>
+        <a href="#format">Формат</a>
+        <a href="#faq">Питання</a>
+      </nav>
+
+      <a class="button button-small header-cta" data-cta href="#pricing">Почати</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Мобільна навігація">
+      <a href="#about">Про професію</a>
+      <a href="#program">Програма</a>
+      <a href="#format">Формат</a>
+      <a href="#faq">Питання</a>
+      <a class="button" data-cta href="#pricing">Почати тест-драйв</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-dark">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> 7-денний онлайн-тест професії</div>
+          <h1>Знаходь помилки на сайтах. <em>Перетвори уважність на IT-професію.</em></h1>
+          <p class="hero-lead">За 7 днів ти виконаєш перші задачі Manual QA: протестуєш сайт, складеш чекліст, оформиш баг-репорт і зрозумієш, чи варто йти в професію далі.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary button-large" data-cta href="#pricing">Почати тест-драйв</a>
+            <a class="button button-ghost button-large" href="#challenge">Спробувати зараз</a>
+          </div>
+
+          <div class="hero-notes" aria-label="Основні переваги">
+            <div><span class="check">✓</span> Без програмування на старті</div>
+            <div><span class="check">✓</span> Практика з першого дня</div>
+            <div><span class="check">✓</span> 100% онлайн</div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Приклад роботи тестувальника">
+          <div class="browser-card">
+            <div class="browser-top">
+              <div class="browser-dots"><i></i><i></i><i></i></div>
+              <div class="browser-address">demo.itstart.com.ua/checkout</div>
+              <div class="browser-icon">↗</div>
+            </div>
+            <div class="demo-page">
+              <div class="demo-tag">Тестове середовище</div>
+              <div class="demo-product">
+                <div class="demo-image">
+                  <span>QA</span>
+                  <div class="bug-pin pin-one">1</div>
+                </div>
+                <div class="demo-info">
+                  <small>Онлайн-курс</small>
+                  <h3>Manual QA Start</h3>
+                  <div class="demo-rating">★★★★★ <span>4.9</span></div>
+                  <div class="demo-price"><strong>990 грн</strong><del>1 990 грн</del></div>
+                  <button type="button" class="demo-buy">Купити за 1 990 грн</button>
+                  <div class="bug-pin pin-two">2</div>
+                </div>
+              </div>
+              <div class="demo-form-row">
+                <label>Email</label>
+                <input aria-label="Телефон у полі Email" value="+380 00 000 00 00" readonly>
+                <button type="button">Відпраити</button>
+                <div class="bug-pin pin-three">3</div>
+              </div>
+              <div class="browser-status">
+                <span><b id="hero-bug-count">3</b> потенційні баги</span>
+                <span class="status-live">● QA review</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card floating-card-top">
+            <b>Твоя перша задача</b>
+            <span>Знайти й описати 3 помилки</span>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <span class="floating-icon">↳</span>
+            <div><b>Компанії платять не за кліки</b><span>А за системний пошук і опис проблем</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-strip reveal delay-2">
+        <div><strong>7 днів</strong><span>щоб перевірити професію</span></div>
+        <div><strong>4 практичні роботи</strong><span>для першого QA-портфоліо</span></div>
+        <div><strong>1 година на день</strong><span>у зручному темпі</span></div>
+        <div><strong>Живий фідбек</strong><span>на ключове завдання</span></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="about">
+      <div class="container split-heading reveal">
+        <div>
+          <div class="eyebrow eyebrow-dark"><span></span> Що робить QA</div>
+          <h2>Помилки коштують бізнесу грошей. Тестувальник знаходить їх <em>раніше за клієнта.</em></h2>
+        </div>
+        <div class="large-copy">
+          <p>Manual QA перевіряє сайти й застосунки як звичайний користувач, але робить це системно: відтворює проблему, збирає докази та пояснює команді, що саме треба виправити.</p>
+          <p class="muted">Це не «просто потикати сайт». Це навичка бачити ризики, ставити правильні запитання і документувати результат.</p>
+        </div>
+      </div>
+
+      <div class="container profession-grid reveal">
+        <article class="profession-card accent-card">
+          <span class="card-index">01</span>
+          <div class="icon-box">⌕</div>
+          <h3>Перевіряєш продукт</h3>
+          <p>Проходиш ключові сценарії користувача: реєстрацію, оплату, форми, мобільну версію.</p>
+        </article>
+        <article class="profession-card">
+          <span class="card-index">02</span>
+          <div class="icon-box">⚑</div>
+          <h3>Знаходиш проблему</h3>
+          <p>Фіксуєш, де саме продукт працює не так, як очікує користувач або бізнес.</p>
+        </article>
+        <article class="profession-card dark-card">
+          <span class="card-index">03</span>
+          <div class="icon-box">{ }</div>
+          <h3>Описуєш баг</h3>
+          <p>Створюєш зрозумілий звіт, щоб розробник міг повторити й виправити помилку.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-blue">
+      <div class="container pain-grid">
+        <div class="pain-heading reveal">
+          <div class="eyebrow eyebrow-light"><span></span> Можливо, це про тебе</div>
+          <h2>Хочеш працювати онлайн, але не знаєш, <em>з якої професії почати.</em></h2>
+          <p>Не треба одразу віддавати великі гроші за довгий курс. Спочатку перевір напрям на реальних задачах.</p>
+        </div>
+        <div class="pain-list reveal delay-1">
+          <article><span>01</span><div><h3>Робота прив’язує до місця</h3><p>Хочеться навички, яку можна використовувати з ноутбука.</p></div></article>
+          <article><span>02</span><div><h3>Дохід уперся у стелю</h3><p>Потрібен напрям із можливістю професійного зростання.</p></div></article>
+          <article><span>03</span><div><h3>Код поки лякає</h3><p>Хочеться зайти в IT через практичний і зрозумілий старт.</p></div></article>
+          <article><span>04</span><div><h3>Не хочеш купувати кота в мішку</h3><p>Спочатку хочеш спробувати професію, а вже потім вирішувати.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark challenge-section" id="challenge">
+      <div class="container challenge-grid">
+        <div class="challenge-copy reveal">
+          <div class="eyebrow"><span></span> Мінітест прямо зараз</div>
+          <h2>Знайди 3 баги. <em>Так починається робота QA.</em></h2>
+          <p>Натискай на елементи, які здаються неправильними. Ми покажемо, як тестувальник перетворює спостереження на нормальний баг-репорт.</p>
+          <div class="challenge-progress">
+            <div class="progress-number"><strong id="challenge-count">0</strong><span>/ 3 знайдено</span></div>
+            <div class="progress-track"><i id="challenge-progress-bar"></i></div>
+          </div>
+          <div class="challenge-feedback" id="challenge-feedback" aria-live="polite">Підказка: перевір ціну, поле форми та текст кнопки.</div>
+        </div>
+
+        <div class="test-window reveal delay-1">
+          <div class="test-toolbar">
+            <div class="browser-dots"><i></i><i></i><i></i></div>
+            <span>Тестовий checkout</span>
+            <button type="button" id="reset-challenge">Скинути</button>
+          </div>
+          <div class="test-content">
+            <div class="test-badge">Лише сьогодні</div>
+            <h3>Практичний курс QA</h3>
+            <p>Доступ до 7 уроків та практичних завдань.</p>
+            <button class="bug-target" type="button" data-bug="price" data-message="Ціна на кнопці не збігається з ціною товару — це функціональний/контентний дефект.">
+              <span class="price-row"><b>990 грн</b><del>1 990 грн</del></span>
+              <span class="fake-buy">Купити за 1 990 грн</span>
+            </button>
+            <div class="fake-field-wrap">
+              <label for="fake-email">Email для доступу</label>
+              <button class="bug-target fake-field" type="button" data-bug="field" data-message="У полі Email введений номер телефону. Потрібна валідація формату й правильний тип поля.">
+                <span id="fake-email">+380 99 123 45 67</span>
+              </button>
+            </div>
+            <button class="bug-target fake-submit" type="button" data-bug="typo" data-message="У тексті кнопки орфографічна помилка: «Відпраити» замість «Відправити».">Відпраити заявку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="program">
+      <div class="container program-heading reveal">
+        <div>
+          <div class="eyebrow eyebrow-dark"><span></span> Програма тест-драйву</div>
+          <h2>Не сім днів теорії. <em>Сім кроків до першої QA-роботи.</em></h2>
+        </div>
+        <p>Кожен день завершується конкретним результатом, який можна показати куратору й додати до навчального портфоліо.</p>
+      </div>
+
+      <div class="container program-layout">
+        <div class="program-list reveal">
+          <details open>
+            <summary><span>День 1</span><b>Як мислить тестувальник</b><i></i></summary>
+            <div class="details-content"><p>Розберешся, за що відповідає Manual QA, як працює команда продукту і чим нормальна перевірка відрізняється від хаотичних кліків.</p><strong>Результат: карта перевірок для демосайту.</strong></div>
+          </details>
+          <details>
+            <summary><span>День 2</span><b>Checklist і тестові сценарії</b><i></i></summary>
+            <div class="details-content"><p>Навчишся розкладати функцію на логічні перевірки й не пропускати очевидні ризики.</p><strong>Результат: перший QA-checklist.</strong></div>
+          </details>
+          <details>
+            <summary><span>День 3</span><b>Пошук і відтворення багів</b><i></i></summary>
+            <div class="details-content"><p>Протестуєш форму, checkout і мобільну версію навчального продукту з навмисними дефектами.</p><strong>Результат: список знайдених проблем із доказами.</strong></div>
+          </details>
+          <details>
+            <summary><span>День 4</span><b>Bug report без води</b><i></i></summary>
+            <div class="details-content"><p>Оформиш кроки відтворення, фактичний та очікуваний результат, severity і вкладення.</p><strong>Результат: баг-репорт за робочим шаблоном.</strong></div>
+          </details>
+          <details>
+            <summary><span>День 5</span><b>Jira та робота в команді</b><i></i></summary>
+            <div class="details-content"><p>Побачиш, як дефект проходить шлях від QA до розробника і назад на перевірку.</p><strong>Результат: оформлена задача в Jira-подібному середовищі.</strong></div>
+          </details>
+          <details>
+            <summary><span>День 6</span><b>DevTools і базова технічна діагностика</b><i></i></summary>
+            <div class="details-content"><p>Спробуєш перевірити адаптивність, консоль і мережеві запити без написання коду.</p><strong>Результат: технічний коментар до дефекту.</strong></div>
+          </details>
+          <details>
+            <summary><span>День 7</span><b>Підсумкова QA-задача</b><i></i></summary>
+            <div class="details-content"><p>Пройдеш повний цикл: план перевірки → тестування → документація → коротка презентація результату.</p><strong>Результат: готова робота та персональний план розвитку.</strong></div>
+          </details>
+        </div>
+
+        <aside class="program-aside reveal delay-1">
+          <div class="aside-label">Після 7 днів у тебе буде</div>
+          <ul>
+            <li><span>✓</span> Checklist перевірки сайту</li>
+            <li><span>✓</span> Оформлений bug report</li>
+            <li><span>✓</span> Практика з Jira і DevTools</li>
+            <li><span>✓</span> Розуміння реальної роботи QA</li>
+            <li><span>✓</span> Рекомендація щодо наступного кроку</li>
+          </ul>
+          <div class="aside-quote">«За 7 днів ти не станеш Senior. Але перестанеш гадати, чи твоє це».</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section tools-section">
+      <div class="container reveal">
+        <div class="center-heading">
+          <div class="eyebrow eyebrow-dark"><span></span> Інструменти</div>
+          <h2>Побачиш робоче середовище QA <em>до великого курсу.</em></h2>
+        </div>
+        <div class="tools-track" aria-label="Інструменти курсу">
+          <div><span>JI</span><b>Jira</b></div>
+          <div><span>DT</span><b>DevTools</b></div>
+          <div><span>PM</span><b>Postman</b></div>
+          <div><span>SQL</span><b>SQL basics</b></div>
+          <div><span>GH</span><b>GitHub</b></div>
+          <div><span>API</span><b>API basics</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="format">
+      <div class="container format-grid">
+        <div class="format-copy reveal">
+          <div class="eyebrow"><span></span> Як проходить навчання</div>
+          <h2>Дивишся короткий урок. <em>Одразу робиш руками.</em></h2>
+          <p>Матеріали відкриваються у навчальному кабінеті. Нагадування й підтримка приходять у Telegram, але весь прогрес, завдання та фідбек зберігаються на платформі.</p>
+        </div>
+        <div class="format-cards reveal delay-1">
+          <article><span>01</span><div><h3>Навчальна платформа</h3><p>Уроки, шаблони, тести та домашні завдання в одному кабінеті.</p></div></article>
+          <article><span>02</span><div><h3>Практичний полігон</h3><p>Спеціально підготовлений сайт із багами для відпрацювання навичок.</p></div></article>
+          <article><span>03</span><div><h3>Перевірка роботи</h3><p>Фідбек на підсумковий баг-репорт і рекомендації щодо розвитку.</p></div></article>
+          <article><span>04</span><div><h3>Telegram-підтримка</h3><p>Нагадування, відповіді на питання та анонси живих зустрічей.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light mentor-section" id="mentor">
+      <div class="container mentor-grid">
+        <div class="mentor-visual reveal">
+          <div class="mentor-placeholder">
+            <svg viewBox="0 0 400 520" aria-hidden="true">
+              <circle cx="200" cy="150" r="82" fill="currentColor" opacity=".18"/>
+              <path d="M65 500c8-124 57-198 135-198s127 74 135 198H65Z" fill="currentColor" opacity=".18"/>
+              <path d="M127 151c0-46 32-85 73-85s73 39 73 85-32 90-73 90-73-44-73-90Z" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="8 9" opacity=".5"/>
+            </svg>
+            <div><b>Фото керівника курсу</b><span>додамо перед запуском</span></div>
+          </div>
+          <div class="mentor-badge">Практикуючий QA / Lead</div>
+        </div>
+        <div class="mentor-copy reveal delay-1">
+          <div class="eyebrow eyebrow-dark"><span></span> Керівник програми</div>
+          <h2>Навчає не «гуру з інтернету», а <em>реальний QA-фахівець.</em></h2>
+          <p class="mentor-intro">Тут буде ім’я, фото й перевіряльний професійний профіль керівника курсу. Досвід, компанії та досягнення вказуємо тільки ті, які людина може підтвердити.</p>
+          <div class="mentor-points">
+            <div><strong>Практичний досвід</strong><span>Робота з реальними web- і mobile-продуктами.</span></div>
+            <div><strong>Досвід менторства</strong><span>Уміння пояснювати новачкам без технічної каші.</span></div>
+            <div><strong>Відкрита репутація</strong><span>Справжній LinkedIn, публічні матеріали та професійна історія.</span></div>
+          </div>
+          <a class="text-link disabled-link" href="#mentor" aria-disabled="true">LinkedIn керівника буде додано ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="container pricing-grid">
+        <div class="pricing-copy reveal">
+          <div class="eyebrow eyebrow-dark"><span></span> Стартовий продукт ITStart</div>
+          <h2>Спочатку перевір професію. <em>Потім вирішуй, чи йти далі.</em></h2>
+          <p>Вартість тест-драйву можна зарахувати в оплату повної програми Manual QA, якщо ти вирішиш продовжити навчання.</p>
+          <div class="pricing-guarantee">
+            <span>7</span>
+            <div><b>днів доступу до практики</b><p>Плюс шаблони та матеріали залишаються у кабінеті.</p></div>
+          </div>
+        </div>
+        <div class="price-card reveal delay-1">
+          <div class="price-card-top">
+            <span class="price-label">QA TEST DRIVE</span>
+            <span class="price-badge">Перший набір</span>
+          </div>
+          <div class="price"><strong data-price>990</strong><span>грн</span></div>
+          <p class="price-sub">Одноразова оплата. Без підписки.</p>
+          <ul>
+            <li><span>✓</span> 7 коротких модулів</li>
+            <li><span>✓</span> Практичний сайт із багами</li>
+            <li><span>✓</span> Шаблони checklist і bug report</li>
+            <li><span>✓</span> Перевірка підсумкової роботи</li>
+            <li><span>✓</span> Закритий Telegram-чат</li>
+          </ul>
+          <a class="button button-primary button-full button-large" data-checkout href="https://academy.itstart.com.ua/">Почати тест-драйв</a>
+          <small>Після оплати доступ прийде на email. URL оплати змінюється в одному місці у <code>assets/script.js</code>.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-heading reveal">
+          <div class="eyebrow eyebrow-dark"><span></span> Питання</div>
+          <h2>Без казок про легкі гроші. <em>Ось як це працює.</em></h2>
+        </div>
+        <div class="faq-list reveal delay-1">
+          <details open>
+            <summary>Мені потрібен технічний досвід?<i></i></summary>
+            <p>Ні. Тест-драйв починається з базових понять і розрахований на людей без досвіду в IT. Потрібні ноутбук, стабільний інтернет та готовність виконувати завдання.</p>
+          </details>
+          <details>
+            <summary>Треба вміти програмувати?<i></i></summary>
+            <p>Для перших Manual QA-задач — ні. На старті важливі уважність, логіка й уміння зрозуміло описати проблему. Технічні навички додаються поступово.</p>
+          </details>
+          <details>
+            <summary>Після 7 днів я знайду роботу?<i></i></summary>
+            <p>Ні, і ми не будемо брехати. За 7 днів ти перевіриш професію, виконаєш перші завдання та зрозумієш, який обсяг навчання потрібен для виходу на junior-рівень.</p>
+          </details>
+          <details>
+            <summary>Скільки часу потрібно щодня?<i></i></summary>
+            <p>Орієнтовно 45–75 хвилин: короткий урок і практичне завдання. Матеріали можна проходити у власному темпі в межах доступу.</p>
+          </details>
+          <details>
+            <summary>Де проходить навчання?<i></i></summary>
+            <p>Основні уроки та завдання — у навчальному кабінеті. Telegram використовується для нагадувань, підтримки й комунікації з групою.</p>
+          </details>
+          <details>
+            <summary>Що буде після тест-драйву?<i></i></summary>
+            <p>Ти отримаєш рекомендацію: продовжити повне навчання Manual QA, підтягнути конкретні навички або обрати інший напрям. Рішення залишається за тобою.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-dark">
+      <div class="final-orb"></div>
+      <div class="container final-grid reveal">
+        <div>
+          <span class="final-label">ITSTART / QA TEST DRIVE</span>
+          <h2>Твоя звичка помічати косяки може стати <em>професійною навичкою.</em></h2>
+        </div>
+        <div class="final-action">
+          <p>Спробуй реальні задачі тестувальника до того, як інвестувати місяці у повний курс.</p>
+          <a class="button button-primary button-large" data-checkout href="https://academy.itstart.com.ua/">Почати за <span data-price>990</span> грн</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand brand-footer" href="#top">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="2" y="2" width="44" height="44" rx="13" fill="currentColor"/>
+          <path d="M14 16h8v4h-2v12h2v4h-8v-4h2V20h-2v-4Zm11 0h13v4h-4.5v16h-4V20H25v-4Z" fill="#0b0f18"/>
+        </svg>
+        <span class="brand-word">IT<span>START</span></span>
+      </a>
+      <div class="footer-copy">Практичний старт у digital-професіях без рожевих обіцянок.</div>
+      <div class="footer-contact">
+        <a href="mailto:hello@itstart.com.ua">hello@itstart.com.ua</a>
+        <span>Україна / онлайн</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year"></span> ITStart</span>
+      <div><a href="privacy.html">Політика конфіденційності</a><a href="offer.html">Публічна оферта</a></div>
+      <span>itstart.com.ua</span>
+    </div>
+  </footer>
+
+  <div class="mobile-buy-bar" aria-label="Швидка покупка">
+    <div><small>QA Test Drive</small><strong><span data-price>990</span> грн</strong></div>
+    <a class="button button-primary" data-checkout href="https://academy.itstart.com.ua/">Почати</a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
