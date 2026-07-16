@@ -8,8 +8,8 @@
   const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
 
   [
-    ['assets/team.css?v=6', 'team'],
-    ['assets/final.css?v=6', 'final'],
+    ['assets/team.css?v=7', 'team'],
+    ['assets/final.css?v=7', 'final'],
   ].forEach(([href, key]) => {
     if (!$(`link[data-${key}-styles]`)) {
       const link = document.createElement('link');
@@ -59,8 +59,8 @@
             <div class="hero-team-card">
               <div class="hero-team-headline">Команда курсу</div>
               <div class="hero-team-photos" aria-hidden="true">
-                <img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.png?v=6" alt="">
-                <img class="hero-team-photo hero-team-photo-katya" src="assets/katya.png?v=6" alt="">
+                <img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.png?v=7" alt="">
+                <img class="hero-team-photo hero-team-photo-katya" src="assets/katya.png?v=7" alt="">
               </div>
               <div class="hero-team-info-grid">
                 <div class="person-card">
@@ -122,9 +122,8 @@
       <section class="section section-blue" id="for-whom">
         <div class="container pain-grid">
           <div class="pain-heading reveal">
-            <div class="eyebrow eyebrow-light"><span></span> Вам точно варто спробувати</div>
-            <h2>Впізнали себе хоча б <em>в одному пункті?</em></h2>
-            <a class="button button-primary audience-button" data-cta href="#pricing">Почати старт у новій професії</a>
+            <div class="eyebrow eyebrow-light"><span></span> Для кого ця програма</div>
+            <h2>Вам точно варто спробувати, <em>якщо:</em></h2>
           </div>
 
           <div class="pain-list reveal delay-1">
@@ -135,6 +134,11 @@
             <article><span>05</span><div><h3>Змушені переїхати за кордон</h3></div></article>
             <article><span>06</span><div><h3>Хочете зрозуміти, чи ця професія вам підійде</h3></div></article>
             <article><span>07</span><div><h3>Шукаєте спокій і розуміння, куди рухатись далі</h3></div></article>
+
+            <div class="pain-conclusion">
+              <h3>Впізнали себе хоча б в одному з цих пунктів?</h3>
+              <a class="button button-primary button-full" data-cta href="#pricing">Почати старт у новій професії</a>
+            </div>
           </div>
         </div>
       </section>
@@ -195,7 +199,7 @@
           <div class="mentor-cards reveal delay-1">
             <article class="mentor-card mentor-card-primary">
               <div class="mentor-photo-wrap mentor-photo-wrap-oleh">
-                <img class="mentor-photo" src="assets/oleh.png?v=6" alt="Олег Матвієв — засновник академії та головний куратор курсу">
+                <img class="mentor-photo" src="assets/oleh.png?v=7" alt="Олег Матвієв — засновник академії та головний куратор курсу">
               </div>
               <div class="mentor-card-body">
                 <h3>Олег Матвієв</h3>
@@ -210,7 +214,7 @@
 
             <article class="mentor-card">
               <div class="mentor-photo-wrap mentor-photo-wrap-katya">
-                <img class="mentor-photo" src="assets/katya.png?v=6" alt="Катя — куратор навчального процесу">
+                <img class="mentor-photo" src="assets/katya.png?v=7" alt="Катя — куратор навчального процесу">
               </div>
               <div class="mentor-card-body">
                 <h3>Катя</h3>
@@ -250,7 +254,6 @@
         <div class="container salary-block reveal">
           <div class="salary-title">
             <h2>Актуальні зарплати для професії <em>тестувальник</em></h2>
-            <p>Приклади вакансій з Work.ua. Зарплата залежить від компанії, досвіду, навичок і формату роботи.</p>
           </div>
 
           <div class="vacancy-grid workua-grid">
