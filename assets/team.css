@@ -1,36 +1,44 @@
+/* =========================
+   ПЕРШИЙ ЕКРАН — КОМАНДА
+========================= */
+
 .hero-team-card {
   position: relative;
   overflow: hidden;
-  border-radius: 32px;
-  border: 1px solid rgba(255,255,255,.12);
   padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 32px;
   background:
-    radial-gradient(circle at 72% 18%, rgba(92,124,255,.28), transparent 28%),
+    radial-gradient(
+      circle at 72% 18%,
+      rgba(92, 124, 255, 0.28),
+      transparent 28%
+    ),
     linear-gradient(145deg, #151c2a, #0d111b 72%);
-  box-shadow: 0 30px 70px rgba(0,0,0,.32);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.32);
 }
 
 .hero-team-card::before {
   content: "";
   position: absolute;
   inset: 88px 34px 112px;
+  border: 2px solid rgba(122, 149, 255, 0.26);
   border-radius: 28px;
-  border: 2px solid rgba(122,149,255,.26);
   transform: rotate(6deg);
 }
 
 .hero-team-headline {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: inline-flex;
   align-items: center;
   padding: 10px 18px;
-  border-radius: 999px;
-  background: var(--lime);
   color: var(--ink);
+  background: var(--lime);
+  border-radius: 999px;
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -44,25 +52,36 @@
 .hero-team-photo {
   position: absolute;
   bottom: 0;
+  width: auto;
   max-width: none;
   object-fit: contain;
   object-position: bottom;
-  filter: drop-shadow(0 18px 28px rgba(0,0,0,.28));
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.28));
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  user-select: none;
+  pointer-events: none;
 }
+
+/* Олег на першому екрані */
 
 .hero-team-photo-oleh {
-  left: 0;
-  width: 45%;
+  left: -3%;
+  width: 49%;
+  z-index: 1;
 }
 
+/* Катя на першому екрані */
+
 .hero-team-photo-katya {
-  right: 0;
-  width: 54%;
+  right: -2%;
+  width: 59%;
+  z-index: 2;
 }
 
 .hero-team-info-grid {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
@@ -71,21 +90,48 @@
 
 .person-card {
   padding: 16px;
-  border-radius: 18px;
-  background: rgba(12,16,26,.86);
-  border: 1px solid rgba(255,255,255,.12);
-  backdrop-filter: blur(14px);
   color: var(--white);
+  background: rgba(12, 16, 26, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
 }
 
 .person-card-link {
-  transition: transform .18s ease, border-color .18s ease;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
 }
-.person-card-link:hover { transform: translateY(-2px); border-color: var(--lime); }
 
-.person-name { font-size: 20px; font-weight: 800; line-height: 1.08; }
-.person-role { margin-top: 8px; color: rgba(255,255,255,.82); font-size: 14px; line-height: 1.4; }
-.person-note { margin-top: 10px; color: var(--lime); font-size: 12px; font-weight: 700; }
+.person-card-link:hover {
+  border-color: var(--lime);
+  transform: translateY(-2px);
+}
+
+.person-name {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.person-role {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.person-note {
+  margin-top: 10px;
+  color: var(--lime);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   НИЖНІЙ БЛОК КОМАНДИ
+========================= */
 
 .mentor-section {
   background: #f5f4ef;
@@ -109,30 +155,38 @@
 
 .mentor-card {
   overflow: hidden;
-  border-radius: 28px;
+  background: #ffffff;
   border: 1px solid #d9d7cf;
-  background: #fff;
-  box-shadow: 0 24px 55px rgba(0,0,0,.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.08);
 }
 
 .mentor-photo-wrap {
   position: relative;
-  padding: 36px 36px 0;
-  height: 420px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  height: 420px;
+  padding: 36px 36px 0;
+  overflow: hidden;
 }
 
-.mentor-photo-wrap-oleh { background: #b8ea5a; }
-.mentor-photo-wrap-katya { background: #dce6c9; }
+.mentor-photo-wrap-oleh {
+  background: #b8ea5a;
+}
+
+.mentor-photo-wrap-katya {
+  background: #dce6c9;
+}
 
 .mentor-photo {
-  max-height: 100%;
   width: auto;
   max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   object-position: bottom;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .mentor-card-body {
@@ -153,10 +207,10 @@
 }
 
 .mentor-list {
-  margin: 0;
-  padding-left: 24px;
   display: grid;
   gap: 12px;
+  margin: 0;
+  padding-left: 24px;
   color: #20232b;
   font-size: 18px;
   line-height: 1.55;
@@ -169,9 +223,21 @@
   font-weight: 700;
 }
 
+
+/* =========================
+   ПЛАНШЕТ
+========================= */
+
 @media (max-width: 1040px) {
-  .mentor-cards { grid-template-columns: 1fr; }
+  .mentor-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
+
+/* =========================
+   МОБІЛЬНА ВЕРСІЯ
+========================= */
 
 @media (max-width: 760px) {
   .hero-team-card {
@@ -180,36 +246,88 @@
   }
 
   .hero-team-card::before {
-    inset: 72px 22px 136px;
+    inset: 72px 22px 150px;
     border-radius: 24px;
   }
 
+  .hero-team-headline {
+    padding: 10px 18px;
+    font-size: 11px;
+  }
+
+  /*
+   * Збільшили висоту фотозони.
+   * Завдяки цьому обличчя й тіла стають помітно більшими.
+   */
+
   .hero-team-photos {
-  min-height: 440px;
-  margin-top: 0;
-}
+    min-height: 500px;
+    margin-top: 0;
+  }
 
-.hero-team-photo-oleh {
-  left: -13%;
-  bottom: 0;
-  width: 68%;
-  z-index: 1;
-}
+  /*
+   * Олег:
+   * більша ширина;
+   * зміщення вліво, щоб тіло не витискало Катю;
+   * нижня частина ховається під інформаційною карткою.
+   */
 
-.hero-team-photo-katya {
-  right: -14%;
-  bottom: 0;
-  width: 76%;
-  z-index: 2;
-}
+  .hero-team-photo-oleh {
+    left: -20%;
+    bottom: -2px;
+    width: 82%;
+    z-index: 1;
+  }
+
+  /*
+   * Катя:
+   * трохи більша за Олега;
+   * стоїть попереду;
+   * зміщена вправо.
+   */
+
+  .hero-team-photo-katya {
+    right: -22%;
+    bottom: -2px;
+    width: 92%;
+    z-index: 2;
+  }
+
+  /*
+   * Підтягуємо картки ближче до людей,
+   * щоб не залишати порожню дірку між фото та текстом.
+   */
 
   .hero-team-info-grid {
     grid-template-columns: 1fr;
-    margin-top: -4px;
+    gap: 10px;
+    margin-top: -48px;
   }
 
-  .person-name { font-size: 18px; }
-  .person-role { font-size: 13px; }
+  .person-card {
+    padding: 15px 16px;
+  }
+
+  .person-name {
+    font-size: 19px;
+  }
+
+  .person-role {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .person-note {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  /*
+   * Нижній блок команди.
+   * Тут розміри фото лишаємо такими,
+   * як на твоєму другому скрині.
+   */
 
   .mentor-section-inner {
     gap: 24px;
@@ -231,5 +349,30 @@
   .mentor-role,
   .mentor-list {
     font-size: 16px;
+  }
+}
+
+
+/* =========================
+   ДУЖЕ ВУЗЬКІ ЕКРАНИ
+========================= */
+
+@media (max-width: 390px) {
+  .hero-team-photos {
+    min-height: 470px;
+  }
+
+  .hero-team-photo-oleh {
+    left: -23%;
+    width: 84%;
+  }
+
+  .hero-team-photo-katya {
+    right: -25%;
+    width: 95%;
+  }
+
+  .hero-team-info-grid {
+    margin-top: -44px;
   }
 }
