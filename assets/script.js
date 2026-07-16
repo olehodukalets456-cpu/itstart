@@ -22,8 +22,8 @@
       <div class="hero-team-card">
         <div class="hero-team-headline">Команда курсу</div>
         <div class="hero-team-photos" aria-hidden="true">
-          <img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.svg" alt="">
-          <img class="hero-team-photo hero-team-photo-katya" src="assets/katya.svg" alt="">
+          <img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.png" alt="">
+          <img class="hero-team-photo hero-team-photo-katya" src="assets/katya.png" alt="">
         </div>
         <div class="hero-team-info-grid">
           <a class="person-card person-card-link" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener noreferrer">
@@ -61,7 +61,7 @@
         <div class="mentor-cards reveal delay-1">
           <article class="mentor-card mentor-card-primary">
             <div class="mentor-photo-wrap mentor-photo-wrap-oleh">
-              <img class="mentor-photo" src="assets/oleh.svg" alt="Олег Матвієв — засновник академії та головний куратор курсу">
+              <img class="mentor-photo" src="assets/oleh.png" alt="Олег Матвієв — засновник академії та головний куратор курсу">
             </div>
             <div class="mentor-card-body">
               <h3>Олег Матвієв</h3>
@@ -77,7 +77,7 @@
 
           <article class="mentor-card">
             <div class="mentor-photo-wrap mentor-photo-wrap-katya">
-              <img class="mentor-photo" src="assets/katya.svg" alt="Катя — куратор навчального процесу">
+              <img class="mentor-photo" src="assets/katya.png" alt="Катя — куратор навчального процесу">
             </div>
             <div class="mentor-card-body">
               <h3>Катя</h3>
