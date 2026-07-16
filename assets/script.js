@@ -1,17 +1,486 @@
-(()=>{const C={checkoutUrl:'https://academy.itstart.com.ua/',price:'990'},$=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
-[['assets/team.css?v=5','team'],['assets/final.css?v=5','final']].forEach(([href,key])=>{if(!$(`link[data-${key}-styles]`)){const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.dataset[`${key}Styles`]='1';document.head.appendChild(l)}});
-const main=$('main');if(main)main.innerHTML=`
-<section class="hero section-dark"><div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div><div class="container hero-grid"><div class="hero-copy reveal"><div class="eyebrow"><span></span>5-денна онлайн-програма для новачків</div><h1>Увійдіть в IT через професію <em>QA-тестувальника</em></h1><p class="hero-lead">За 5 днів ви зрозумієте, що потрібно знати для старту, виконаєте перше QA-завдання та отримаєте зрозумілий маршрут до перших співбесід.</p><div class="hero-actions"><a class="button button-primary button-large" data-cta href="#pricing">Почати шлях у QA</a><a class="button button-ghost button-large" href="#mentor">Хто веде програму</a></div><div class="hero-notes"><div><span class="check">✓</span>Без досвіду в IT</div><div><span class="check">✓</span>Без програмування на старті</div><div><span class="check">✓</span>100% онлайн</div></div><div class="hero-bonus"><span class="hero-bonus-label">Бонус</span><div><strong>Як отримати перші співбесіди в IT без комерційного досвіду</strong><p>Урок від IT-рекрутера про CV, LinkedIn, вакансії та головні помилки новачків.</p></div></div></div><div class="hero-visual reveal delay-1" aria-label="Команда ITStart"><div class="hero-team-card"><div class="hero-team-headline">Команда курсу</div><div class="hero-team-photos"><img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.png?v=5" alt=""><img class="hero-team-photo hero-team-photo-katya" src="assets/katya.png?v=5" alt=""></div><div class="hero-team-info-grid"><a class="person-card person-card-link" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener"><div class="person-name">Олег Матвієв</div><div class="person-role">Засновник академії та головний куратор курсу</div><div class="person-note">Переглянути LinkedIn ↗</div></a><div class="person-card"><div class="person-name">Катя</div><div class="person-role">Куратор навчального процесу</div><div class="person-note">Супровід студентів та організаційна підтримка</div></div></div></div></div></div><div class="container hero-strip reveal delay-2"><div><strong>5 днів</strong><span>щоб розкласти шлях у QA по поличках</span></div><div><strong>Перша практика</strong><span>просте завдання тестувальника</span></div><div><strong>Кар’єрний блок</strong><span>пошук роботи без досвіду</span></div><div><strong>990 грн</strong><span>зараховуються в основний курс</span></div></div></section>
-<section class="section section-light" id="about"><div class="container split-heading reveal"><div><div class="eyebrow eyebrow-dark"><span></span>Хто такий QA</div><h2>Тестувальник знаходить помилки <em>раніше за клієнта</em></h2></div><div class="large-copy"><p>Перед запуском сайту, застосунку або нового оновлення QA перевіряє, чи все працює правильно: реєстрація, оплата, кнопки, форми, мобільна версія та інші сценарії користувача.</p><p class="muted">Ваше завдання — помітити проблему, перевірити її та зрозуміло зафіксувати для команди. Для старту важливіші уважність і логіка, а не написання коду.</p></div></div><div class="container profession-grid reveal"><article class="profession-card accent-card"><span class="card-index">01</span><div class="icon-box">⌕</div><h3>Перевіряєте продукт</h3><p>Проходите сайт або застосунок як користувач і перевіряєте, чи все працює за логікою.</p></article><article class="profession-card"><span class="card-index">02</span><div class="icon-box">⚑</div><h3>Знаходите проблему</h3><p>Помічаєте, де продукт поводиться неправильно, незрозуміло або заважає користувачу.</p></article><article class="profession-card dark-card"><span class="card-index">03</span><div class="icon-box">{ }</div><h3>Описуєте помилку</h3><p>Фіксуєте кроки й результат так, щоб команда могла швидко повторити та виправити проблему.</p></article></div></section>
-<section class="section section-blue" id="for-whom"><div class="container pain-grid"><div class="pain-heading reveal"><div class="eyebrow eyebrow-light"><span></span>Вам варто почати</div><h2>Коли хочеться змін, але незрозуміло, <em>з чого почати</em></h2><p>Спочатку розберіться, як виглядає професія, що треба вивчити та як проходить шлях до першої роботи.</p><a class="button button-primary audience-button" data-cta href="#pricing">Зробити перший крок</a></div><div class="pain-list reveal delay-1"><article><span>01</span><div><h3>Хочете прогнозованіший дохід</h3><p>Поточна робота не дає розвитку або фінансової впевненості.</p></div></article><article><span>02</span><div><h3>Хочете працювати онлайн</h3><p>Шукаєте професію, яку можна виконувати з ноутбука вдома або за кордоном.</p></div></article><article><span>03</span><div><h3>Боїтеся технічної складності</h3><p>Здається, що в IT обов’язково треба програмувати й знати все англійською.</p></div></article><article><span>04</span><div><h3>Готові розібратися без великого ризику</h3><p>Хочете побачити маршрут, виконати просте завдання та оцінити свої сили.</p></div></article><article><span>05</span><div><h3>Потрібне розуміння наступного кроку</h3><p>Втомилися хаотично дивитися безкоштовні відео й не розуміти, що вчити далі.</p></div></article></div></div></section>
-<section class="section section-light" id="program"><div class="container program-heading reveal"><div><div class="eyebrow eyebrow-dark"><span></span>5-денна програма</div><h2>Мінімум, який потрібно знати, <em>щоб почати рух у QA</em></h2></div><p>Кожен день дає один зрозумілий результат: від знайомства з професією до маршруту навчання та пошуку роботи.</p></div><div class="container program-layout"><div class="program-list reveal"><details open><summary><span>День 1</span><b>Як насправді працює QA</b><i></i></summary><div class="details-content"><p>Що тестувальник робить протягом дня, як взаємодіє з командою та що потрібно на старті.</p><strong>Результат: зрозуміла картина професії без технічної каші.</strong></div></details><details><summary><span>День 2</span><b>Перше завдання тестувальника</b><i></i></summary><div class="details-content"><p>Отримаєте навчальну сторінку, знайдете кілька помилок і порівняєте свою логіку з прикладом куратора.</p><strong>Результат: перший простий практичний досвід у QA.</strong></div></details><details><summary><span>День 3</span><b>Що потрібно знати для роботи</b><i></i></summary><div class="details-content"><p>Побачите карту навичок Junior QA: основи тестування, чеклисти, баг-репорти, Jira, DevTools, API та SQL.</p><strong>Результат: список навичок і правильна послідовність навчання.</strong></div></details><details><summary><span>День 4</span><b>Як отримати перші співбесіди без досвіду</b><i></i></summary><div class="details-content"><p>IT-рекрутер пояснить, як оформити CV і LinkedIn, де шукати junior-вакансії та що відповідати про відсутність досвіду.</p><strong>Результат: зрозумілий план виходу на ринок.</strong></div></details><details><summary><span>День 5</span><b>Маршрут від нуля до першої роботи</b><i></i></summary><div class="details-content"><p>Зберете все в один план: що вивчати, яку практику пройти, що додати в портфоліо та коли починати пошук роботи.</p><strong>Результат: покрокова карта подальшого руху.</strong></div></details></div><aside class="program-aside reveal delay-1"><div class="aside-label">У програмі ви отримаєте</div><ul><li><span>✓</span>5 коротких навчальних модулів</li><li><span>✓</span>Перше практичне QA-завдання</li><li><span>✓</span>Карту навичок Junior QA</li><li><span>✓</span>План навчання та працевлаштування</li><li><span>✓</span>Кар’єрний урок від IT-рекрутера</li><li><span>✓</span>Шаблони CV та LinkedIn</li></ul><div class="aside-quote">Мета — показати, що шлях у QA зрозумілий і його можна пройти послідовно.</div></aside></div></section>
-<section class="section outcomes-section"><div class="container reveal"><div class="center-heading outcomes-heading"><div class="eyebrow eyebrow-dark"><span></span>Після п’ятого дня</div><h2>У вас буде не просто інформація, а <em>зрозумілий наступний крок</em></h2></div><div class="outcomes-grid"><article><span>01</span><h3>Розуміння професії</h3><p>Побачите, як виглядає робота QA і за що тестувальнику платять компанії.</p></article><article><span>02</span><h3>Перша практика</h3><p>Виконаєте просте завдання та переконаєтеся, що старт не вимагає написання коду.</p></article><article><span>03</span><h3>Карта навичок</h3><p>Знатимете, що саме вивчати і в якій послідовності.</p></article><article><span>04</span><h3>План працевлаштування</h3><p>Зрозумієте, як готувати CV, профіль, портфоліо та виходити на співбесіди.</p></article></div><div class="course-bridge"><div><div class="eyebrow"><span></span>Наступний етап</div><h3>На основному курсі ITStart ми проведемо вас через увесь маршрут</h3><p>Від базових знань і практики до портфоліо, підготовки до співбесід та системного пошуку першої роботи.</p></div><a class="button button-primary" data-cta href="#pricing">Почати з 5-денної програми</a></div></div></section>
-<section class="section section-light mentor-section" id="mentor"><div class="container mentor-section-inner"><div class="section-team-heading reveal"><div class="eyebrow eyebrow-dark"><span></span>Команда ITStart</div><h2>Хто стоїть за програмою</h2></div><div class="mentor-cards reveal delay-1"><article class="mentor-card"><div class="mentor-photo-wrap mentor-photo-wrap-oleh"><img class="mentor-photo" src="assets/oleh.png?v=5" alt="Олег Матвієв"></div><div class="mentor-card-body"><h3>Олег Матвієв</h3><p class="mentor-role">Засновник академії та головний куратор курсу</p><ul class="mentor-list"><li>Відповідає за структуру навчання, логіку програми та якість матеріалів.</li><li>Формує практичні завдання на реальних сценаріях.</li><li>Професійний профіль відкритий у LinkedIn.</li></ul><a class="mentor-link" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener">LinkedIn Олега ↗</a></div></article><article class="mentor-card"><div class="mentor-photo-wrap mentor-photo-wrap-katya"><img class="mentor-photo" src="assets/katya.png?v=5" alt="Катя"></div><div class="mentor-card-body"><h3>Катя</h3><p class="mentor-role">Куратор навчального процесу</p><ul class="mentor-list"><li>Супроводжує студентів під час проходження програми.</li><li>Допомагає з організаційними питаннями та платформою.</li><li>Стежить, щоб студент не випав із процесу.</li></ul></div></article></div></div></section>
-<section class="section section-dark career-section" id="salary"><div class="container career-heading reveal"><div><div class="eyebrow"><span></span>Професія та ринок</div><h2>QA дає зрозумілий вхід в IT і <em>можливість працювати онлайн</em></h2></div><div class="career-copy"><p>Для старту в Manual QA не потрібно одразу писати код. Ви послідовно освоюєте перевірку продуктів, документацію та базові інструменти.</p><p>На ринку є віддалені, гібридні та офісні вакансії. Дохід залежить від навичок, досвіду, англійської, компанії та формату роботи.</p></div></div><div class="container market-benefits reveal"><article><span>01</span><h3>Без коду на старті</h3><p>Почати можна з Manual QA, поступово додаючи технічні навички.</p></article><article><span>02</span><h3>Віддалений формат</h3><p>Частина вакансій дозволяє працювати з дому або з іншої країни.</p></article><article><span>03</span><h3>Зрозуміле зростання</h3><p>Junior → Middle → Senior та перехід у суміжні технічні напрямки.</p></article></div><div class="container salary-block reveal"><div class="salary-title"><div><div class="eyebrow"><span></span>Приклади вакансій</div><h2>Зарплати, які можна побачити у вакансіях QA</h2></div><p>Приклади зі скріншотів Work.ua, наданих для ленду. Це не гарантія конкретного доходу після навчання.</p></div><div class="vacancy-grid"><article class="vacancy-card"><h3>Junior QA Engineer</h3><div class="vacancy-salary">₴ 40 000–50 000 грн</div><div class="vacancy-meta">Повна зайнятість</div><p class="vacancy-desc">Компанія створює та підтримує внутрішні системи, веб-сервіси, мобільні додатки та інтеграції.</p><div class="vacancy-source"><span>Work.ua</span><span>2 тиж. тому</span></div></article><article class="vacancy-card"><h3>Manual QA Engineer</h3><div class="vacancy-salary">₴ 45 000–90 000 грн</div><div class="vacancy-meta">Дистанційно</div><p class="vacancy-desc">Healthcare Software. У вакансії зазначено готовність розглядати студента та кандидата з досвідом від одного року.</p><div class="vacancy-source"><span>Work.ua</span><span>3 дні тому</span></div></article><article class="vacancy-card"><h3>QA-інженер</h3><div class="vacancy-salary">₴ 45 000–51 000 грн</div><div class="vacancy-meta">Київ · гібридний формат</div><p class="vacancy-desc">Тестування CRM-системи та мобільних продуктів у продуктовій команді.</p><div class="vacancy-source"><span>Work.ua</span><span>Вчора</span></div></article></div></div></section>
-<section class="section pricing-section" id="pricing"><div class="container pricing-grid"><div class="pricing-copy reveal"><div class="eyebrow eyebrow-dark"><span></span>Перший крок у QA</div><h2>Почніть із короткої програми, <em>не купуючи великий курс навмання</em></h2><p>За 5 днів ви розберетеся в професії, виконаєте перше завдання та побачите весь маршрут до працевлаштування.</p><div class="pricing-guarantee"><span>990</span><div><b>грн зараховуються в оплату основного курсу</b><p>Якщо після програми ви вирішите продовжити навчання в ITStart.</p></div></div></div><div class="price-card reveal delay-1"><div class="price-card-top"><span class="price-label">ВХІД У QA</span><span class="price-badge">Онлайн</span></div><div class="old-price">2 100 грн</div><div class="price"><strong data-price>990</strong><span>грн</span></div><p class="price-sub">Одноразова оплата. Без підписки.</p><ul><li><span>✓</span>5 навчальних модулів</li><li><span>✓</span>Перше практичне QA-завдання</li><li><span>✓</span>Карта навичок і план навчання</li><li><span>✓</span>План виходу на перші співбесіди</li><li><span>✓</span>Урок від IT-рекрутера</li><li><span>✓</span>Шаблони CV та LinkedIn</li></ul><a class="button button-primary button-full button-large" data-checkout href="https://academy.itstart.com.ua/">Отримати доступ</a><small>Після оплати доступ до навчальної платформи прийде на email.</small></div></div></section>
-<section class="section section-light" id="faq"><div class="container faq-grid"><div class="faq-heading reveal"><div class="eyebrow eyebrow-dark"><span></span>Питання</div><h2>Що потрібно знати <em>перед стартом</em></h2></div><div class="faq-list reveal delay-1"><details open><summary>Мені потрібен досвід в IT?<i></i></summary><p>Ні. Програма створена для людей, які починають із нуля.</p></details><details><summary>Потрібно вміти програмувати?<i></i></summary><p>Для стартових завдань Manual QA — ні. На початку важливі уважність, логіка та вміння описувати проблеми.</p></details><details><summary>Що робити, якщо я погано знаю англійську?<i></i></summary><p>Для проходження програми високий рівень не потрібен. Для ширшого вибору вакансій англійську варто паралельно покращувати.</p></details><details><summary>Чи знайду я роботу одразу після 5 днів?<i></i></summary><p>Ні. За 5 днів ви отримаєте базове розуміння, першу практику та маршрут. Повний набір навичок проходиться на основній програмі.</p></details><details><summary>Що буде після цієї програми?<i></i></summary><p>Ви зможете продовжити самостійно або вступити на основний курс ITStart, де куратори проведуть вас через навчання, практику, портфоліо та підготовку до пошуку роботи.</p></details><details><summary>Де проходить навчання?<i></i></summary><p>Уроки та матеріали відкриваються в навчальному кабінеті. Програму можна проходити онлайн у зручний час.</p></details></div></div></section>
-<section class="final-cta section-dark"><div class="final-orb"></div><div class="container final-grid reveal"><div><span class="final-label">ITSTART / ВХІД У QA</span><h2>Зробіть перший крок у нову професію <em>вже сьогодні</em></h2></div><div class="final-action"><p>Розберіться, як працює QA, що потрібно вивчити та як виглядає шлях від нуля до першої роботи.</p><a class="button button-primary button-large" data-checkout href="https://academy.itstart.com.ua/">Почати за <span data-price>990</span> грн</a></div></div></section>`;
-const mobile=$('.mobile-buy-bar');if(mobile)mobile.innerHTML='<div><small>5-денна програма</small><strong><span data-price>990</span> грн</strong></div><a class="button button-primary" data-checkout href="https://academy.itstart.com.ua/">Почати</a>';
-$$('[data-price]').forEach(n=>n.textContent=C.price);$$('[data-checkout]').forEach(a=>{const u=new URL(C.checkoutUrl,location.href);new URLSearchParams(location.search).forEach((v,k)=>u.searchParams.set(k,v));a.href=u});$$('[data-cta]').forEach(a=>a.onclick=e=>{const t=$('#pricing');if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}});
-const mb=$('.menu-button'),mn=$('.mobile-nav');if(mb&&mn){mb.onclick=()=>{const o=mn.classList.toggle('open');document.body.classList.toggle('menu-open',o);mb.setAttribute('aria-expanded',o)};$$('a',mn).forEach(a=>a.onclick=()=>{mn.classList.remove('open');document.body.classList.remove('menu-open');mb.setAttribute('aria-expanded','false')})}
-const h=$('.site-header');addEventListener('scroll',()=>h?.classList.toggle('scrolled',scrollY>20),{passive:true});const items=$$('.reveal');if('IntersectionObserver'in window){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}}),{threshold:.08});items.forEach(i=>o.observe(i))}else items.forEach(i=>i.classList.add('visible'));const y=$('#current-year');if(y)y.textContent=new Date().getFullYear()})();
+(() => {
+  const CONFIG = {
+    checkoutUrl: 'https://academy.itstart.com.ua/',
+    price: '990',
+  };
+
+  const $ = (selector, context = document) => context.querySelector(selector);
+  const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
+
+  [
+    ['assets/team.css?v=6', 'team'],
+    ['assets/final.css?v=6', 'final'],
+  ].forEach(([href, key]) => {
+    if (!$(`link[data-${key}-styles]`)) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      link.dataset[`${key}Styles`] = '1';
+      document.head.appendChild(link);
+    }
+  });
+
+  const main = $('main');
+  if (main) {
+    main.innerHTML = `
+      <section class="hero section-dark">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span></span> Для новачків</div>
+            <h1>Віддалена професія <em>тестувальник</em></h1>
+            <p class="hero-income">Почни заробляти від <strong>1000$ до 3000$/міс</strong> відразу після навчання</p>
+
+            <div class="hero-notes hero-notes-large" aria-label="Основні переваги">
+              <div><span class="check">✓</span> Без досвіду в IT</div>
+              <div><span class="check">✓</span> Без знання коду та англійської</div>
+              <div><span class="check">✓</span> Для тих, хто хоче почати заробляти в IT</div>
+              <div><span class="check">✓</span> Для тих, хто хоче працювати онлайн</div>
+              <div><span class="check">✓</span> Допомагаємо з працевлаштуванням</div>
+            </div>
+
+            <div class="hero-bonus">
+              <span class="hero-bonus-label">Бонус</span>
+              <div>
+                <strong>Безкоштовний урок «Як легко знайти роботу в IT без досвіду»</strong>
+                <p>Від IT-рекрутера з 8-річним досвідом.</p>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary button-large" data-cta href="#pricing">Почати старт у новій професії</a>
+              <a class="button button-ghost button-large" href="#program">Що буде за 5 днів</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal delay-1" aria-label="Команда ITStart">
+            <div class="hero-team-card">
+              <div class="hero-team-headline">Команда курсу</div>
+              <div class="hero-team-photos" aria-hidden="true">
+                <img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.png?v=6" alt="">
+                <img class="hero-team-photo hero-team-photo-katya" src="assets/katya.png?v=6" alt="">
+              </div>
+              <div class="hero-team-info-grid">
+                <div class="person-card">
+                  <div class="person-name">Олег Матвієв</div>
+                  <div class="person-role">Засновник академії та головний куратор курсу</div>
+                </div>
+                <div class="person-card">
+                  <div class="person-name">Катя</div>
+                  <div class="person-role">Куратор навчального процесу</div>
+                  <div class="person-note">Супровід студентів та організаційна підтримка</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero-strip reveal delay-2">
+          <div><strong>5 днів</strong><span>щоб зрозуміти, як почати</span></div>
+          <div><strong>100% онлайн</strong><span>навчайтесь з будь-якої точки світу</span></div>
+          <div><strong>Без коду</strong><span>простий старт для новачків</span></div>
+          <div><strong>990 грн</strong><span>замість 2100 грн</span></div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="about">
+        <div class="container split-heading reveal">
+          <div>
+            <div class="eyebrow eyebrow-dark"><span></span> Хто такий QA?</div>
+            <h2>Помилки коштують бізнесу <em>грошей</em></h2>
+          </div>
+          <div class="large-copy">
+            <p>Тестувальник перед виходом будь-якого нового сайту чи застосунку перевіряє, чи є там проблеми, і документує їх.</p>
+            <p class="muted">Все дуже просто: вам дають сайт, ви його уважно переглядаєте, знаходите помилки, фіксуєте їх і отримуєте за це гроші.</p>
+          </div>
+        </div>
+
+        <div class="container profession-grid reveal">
+          <article class="profession-card accent-card">
+            <span class="card-index">01</span>
+            <div class="icon-box">⌕</div>
+            <h3>Перевіряєте сайт</h3>
+            <p>Дивитесь, чи правильно працюють кнопки, форми, оплата, реєстрація та інші функції.</p>
+          </article>
+          <article class="profession-card">
+            <span class="card-index">02</span>
+            <div class="icon-box">⚑</div>
+            <h3>Знаходите помилки</h3>
+            <p>Помічаєте, де сайт або застосунок працює неправильно чи незручно для користувача.</p>
+          </article>
+          <article class="profession-card dark-card">
+            <span class="card-index">03</span>
+            <div class="icon-box">{ }</div>
+            <h3>Фіксуєте результат</h3>
+            <p>Зрозуміло описуєте проблему, щоб команда могла швидко її виправити.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-blue" id="for-whom">
+        <div class="container pain-grid">
+          <div class="pain-heading reveal">
+            <div class="eyebrow eyebrow-light"><span></span> Вам точно варто спробувати</div>
+            <h2>Впізнали себе хоча б <em>в одному пункті?</em></h2>
+            <a class="button button-primary audience-button" data-cta href="#pricing">Почати старт у новій професії</a>
+          </div>
+
+          <div class="pain-list reveal delay-1">
+            <article><span>01</span><div><h3>Ви хочете прогнозований високий дохід</h3></div></article>
+            <article><span>02</span><div><h3>У вас низька зарплата або є ризик втрати роботи</h3></div></article>
+            <article><span>03</span><div><h3>Хочете працювати на 100% онлайн</h3></div></article>
+            <article><span>04</span><div><h3>Сумніваєтесь у собі, але готові розібратись і спробувати без ризиків</h3></div></article>
+            <article><span>05</span><div><h3>Змушені переїхати за кордон</h3></div></article>
+            <article><span>06</span><div><h3>Хочете зрозуміти, чи ця професія вам підійде</h3></div></article>
+            <article><span>07</span><div><h3>Шукаєте спокій і розуміння, куди рухатись далі</h3></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="program">
+        <div class="container program-heading reveal">
+          <div>
+            <div class="eyebrow eyebrow-dark"><span></span> 5-денна онлайн-програма</div>
+            <h2>Для тих, хто хоче перейти в IT, але не знає, <em>з чого почати</em></h2>
+          </div>
+          <p>Протягом п’яти днів ви отримаєте лише ту інформацію, яка мінімально необхідна для старту в професії тестувальника.</p>
+        </div>
+
+        <div class="container program-layout">
+          <div class="program-benefits reveal">
+            <h3>За 5 днів ви:</h3>
+            <div class="program-benefit-list">
+              <article><span>✓</span><p>Зрозумієте професію тестувальника без технічної каші.</p></article>
+              <article><span>✓</span><p>Отримаєте перший простий практичний досвід.</p></article>
+              <article><span>✓</span><p>Побачите, як працює ринок IT.</p></article>
+              <article><span>✓</span><p>Отримаєте список необхідних навичок.</p></article>
+              <article><span>✓</span><p>Отримаєте план навчання.</p></article>
+              <article><span>✓</span><p>Отримаєте план працевлаштування.</p></article>
+            </div>
+          </div>
+
+          <aside class="program-aside reveal delay-1">
+            <div class="aside-label">Бонус у програмі</div>
+            <h3>Як легко знайти роботу в IT без досвіду</h3>
+            <p>Урок від IT-рекрутера з 8-річним досвідом про резюме, LinkedIn, вакансії та підготовку до перших співбесід.</p>
+            <a class="button button-primary button-full" data-cta href="#pricing">Почати старт у новій професії</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section stats-section" id="results">
+        <div class="container reveal">
+          <div class="center-heading stats-heading">
+            <div class="eyebrow eyebrow-dark"><span></span> IT.START сьогодні</div>
+            <h2>Навчання, орієнтоване на <em>працевлаштування</em></h2>
+          </div>
+          <div class="stats-grid">
+            <article><strong>90%</strong><span>студентів працюють</span></article>
+            <article><strong>з 2019</strong><span>навчаємо людей IT-професіям</span></article>
+            <article><strong>2400$</strong><span>середня зарплата учнів</span></article>
+            <article><strong>200+</strong><span>IT-компаній-партнерів</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light mentor-section" id="mentor">
+        <div class="container mentor-section-inner">
+          <div class="section-team-heading reveal">
+            <div class="eyebrow eyebrow-dark"><span></span> Команда ITStart</div>
+            <h2>Хто стоїть за програмою</h2>
+          </div>
+
+          <div class="mentor-cards reveal delay-1">
+            <article class="mentor-card mentor-card-primary">
+              <div class="mentor-photo-wrap mentor-photo-wrap-oleh">
+                <img class="mentor-photo" src="assets/oleh.png?v=6" alt="Олег Матвієв — засновник академії та головний куратор курсу">
+              </div>
+              <div class="mentor-card-body">
+                <h3>Олег Матвієв</h3>
+                <p class="mentor-role">Засновник академії та головний куратор курсу</p>
+                <ul class="mentor-list">
+                  <li>Відповідає за структуру навчання, логіку програми та якість матеріалів.</li>
+                  <li>Показує, що потрібно знати новачку для старту в професії.</li>
+                  <li>Допомагає пройти зрозумілий шлях від першого уроку до виходу на ринок.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="mentor-card">
+              <div class="mentor-photo-wrap mentor-photo-wrap-katya">
+                <img class="mentor-photo" src="assets/katya.png?v=6" alt="Катя — куратор навчального процесу">
+              </div>
+              <div class="mentor-card-body">
+                <h3>Катя</h3>
+                <p class="mentor-role">Куратор навчального процесу</p>
+                <ul class="mentor-list">
+                  <li>Супроводжує студентів під час проходження програми.</li>
+                  <li>Допомагає з організаційними питаннями та навчальною платформою.</li>
+                  <li>Стежить, щоб студент не залишився сам і дійшов до результату.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark career-section" id="career">
+        <div class="container career-heading reveal">
+          <div>
+            <div class="eyebrow"><span></span> Професія у 2026 році</div>
+            <h2>Чому професія тестувальника — <em>найкращий вибір</em></h2>
+          </div>
+          <div class="career-copy">
+            <p>Можливість швидко почати працювати в IT без знань коду та англійської, працювати віддалено та постійно збільшувати свій дохід.</p>
+            <strong>Ми проведемо вас до першої роботи в IT.</strong>
+          </div>
+        </div>
+
+        <div class="container market-benefits reveal delay-1">
+          <article><span>01</span><h3>Швидкий старт</h3><p>Можна почати працювати в IT без знань коду та англійської.</p></article>
+          <article><span>02</span><h3>100% віддалено</h3><p>Не потрібно їздити в офіс — працюйте з будь-якої точки світу, де є інтернет.</p></article>
+          <article><span>03</span><h3>Легкий вхід</h3><p>Ви можете почати заробляти від 700$ уже через два місяці після закінчення курсу.</p></article>
+          <article><span>04</span><h3>Стабільна сфера</h3><p>IT-продукти постійно потребують перевірки, тому професія залишається затребуваною.</p></article>
+          <article><span>05</span><h3>Зростання доходу</h3><p>З досвідом і новими навичками тестувальник може регулярно підвищувати дохід.</p></article>
+          <article><span>06</span><h3>Старт у будь-якому віці</h3><p>Не потрібна технічна освіта — важливі уважність, логіка та бажання навчатись.</p></article>
+        </div>
+
+        <div class="container salary-block reveal">
+          <div class="salary-title">
+            <h2>Актуальні зарплати для професії <em>тестувальник</em></h2>
+            <p>Приклади вакансій з Work.ua. Зарплата залежить від компанії, досвіду, навичок і формату роботи.</p>
+          </div>
+
+          <div class="vacancy-grid workua-grid">
+            <article class="vacancy-card workua-card">
+              <h3>Junior QA Engineer</h3>
+              <div class="vacancy-salary">40 000–50 000 грн</div>
+              <div class="vacancy-meta">Повна зайнятість</div>
+              <p class="vacancy-desc">Робота з внутрішніми системами, вебсервісами, мобільними застосунками та інтеграціями.</p>
+              <div class="vacancy-source"><span>2 тиж. тому</span><strong>Work.ua</strong></div>
+            </article>
+
+            <article class="vacancy-card workua-card">
+              <h3>Manual QA Engineer</h3>
+              <div class="vacancy-salary">45 000–90 000 грн</div>
+              <div class="vacancy-meta">Дистанційно</div>
+              <p class="vacancy-desc">Компанія готова розглядати студента. У вакансії вказано досвід роботи від одного року.</p>
+              <div class="vacancy-source"><span>3 дні тому</span><strong>Work.ua</strong></div>
+            </article>
+
+            <article class="vacancy-card workua-card">
+              <h3>QA-інженер</h3>
+              <div class="vacancy-salary">45 000–51 000 грн</div>
+              <div class="vacancy-meta">Київ · гібридний формат</div>
+              <p class="vacancy-desc">Тестування CRM-системи та мобільних продуктів компанії.</p>
+              <div class="vacancy-source"><span>вчора</span><strong>Work.ua</strong></div>
+            </article>
+          </div>
+
+          <p class="salary-note">Ви можете працювати з будь-якої точки світу, де є інтернет.</p>
+          <a class="button button-primary salary-cta" data-cta href="#pricing">Почати старт у новій професії</a>
+        </div>
+      </section>
+
+      <section class="section section-light" id="faq">
+        <div class="container faq-grid">
+          <div class="faq-heading reveal">
+            <div class="eyebrow eyebrow-dark"><span></span> Q/A</div>
+            <h2>Відповіді на головні <em>питання</em></h2>
+          </div>
+
+          <div class="faq-list reveal delay-1">
+            <details open>
+              <summary>Чому мені варто обрати професію тестувальника?<i></i></summary>
+              <p>Тестувальник — це перспективна, віддалена і легко опановувана IT-професія, яка дає можливість потрапити в IT та добре заробляти, працюючи онлайн.</p>
+            </details>
+            <details>
+              <summary>Що робити, якщо я не знаю англійської?<i></i></summary>
+              <p>Англійська не є обов’язковою для старту кар’єри тестувальника. Ви можете почати навчання з поточного рівня і покращувати мову поступово.</p>
+            </details>
+            <details>
+              <summary>Потрібно вміти програмувати?<i></i></summary>
+              <p>Ні. Для старту в Manual QA не потрібно писати код. Основні навички та інструменти ви будете опановувати поступово під час навчання.</p>
+            </details>
+            <details>
+              <summary>Мені потрібен досвід роботи в IT?<i></i></summary>
+              <p>Ні. Програма створена для новачків, які раніше не працювали в IT і не мають технічної освіти.</p>
+            </details>
+            <details>
+              <summary>Що буде після навчання? Я не залишусь сам(а)?<i></i></summary>
+              <p>Ні. Ми супроводжуємо вас на етапі виходу на ринок і підготовки до співбесід. Наша мета — ваше працевлаштування. Навіть після початку роботи ми залишаємося на зв’язку, щоб підтримати вас на старті.</p>
+            </details>
+            <details>
+              <summary>Як проходить 5-денна програма?<i></i></summary>
+              <p>Ви отримуєте короткі зрозумілі матеріали, першу практику, список необхідних навичок, план навчання та план працевлаштування.</p>
+            </details>
+            <details>
+              <summary>Де проходить навчання?<i></i></summary>
+              <p>Матеріали відкриваються онлайн у навчальному кабінеті. Навчатися можна з телефона або ноутбука з будь-якої точки світу.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing-section final-offer" id="pricing">
+        <div class="container pricing-grid">
+          <div class="pricing-copy reveal">
+            <div class="eyebrow eyebrow-dark"><span></span> Час діяти</div>
+            <h2>Зробіть перший крок у нову професію</h2>
+            <p>Дізнайтеся, як вийти на дохід від 1000$ уже сьогодні.</p>
+
+            <div class="offer-bonus">
+              <strong>Бонус:</strong>
+              <span>безкоштовний урок «Як легко знайти роботу в IT без досвіду» від IT-рекрутера з 8-річним досвідом.</span>
+            </div>
+
+            <div class="countdown-wrap">
+              <span>Пропозиція діє ще:</span>
+              <strong id="offer-countdown">10:00</strong>
+            </div>
+          </div>
+
+          <div class="price-card reveal delay-1">
+            <div class="price-card-top">
+              <span class="price-label">5-ДЕННА ОНЛАЙН-ПРОГРАМА</span>
+              <span class="price-badge">Для новачків</span>
+            </div>
+
+            <div class="old-price">2100 грн</div>
+            <div class="price"><strong data-price>990</strong><span>грн</span></div>
+            <p class="price-sub">Одноразова оплата. Без підписки.</p>
+
+            <ul>
+              <li><span>✓</span> Розуміння професії тестувальника</li>
+              <li><span>✓</span> Перший практичний досвід</li>
+              <li><span>✓</span> Список необхідних навичок</li>
+              <li><span>✓</span> План навчання</li>
+              <li><span>✓</span> План працевлаштування</li>
+              <li><span>✓</span> Урок від IT-рекрутера</li>
+            </ul>
+
+            <a class="button button-primary button-full button-large" data-checkout href="https://academy.itstart.com.ua/">Почати старт у новій професії</a>
+            <small>Після оплати доступ до матеріалів прийде на email.</small>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  const navLinks = {
+    about: 'Про професію',
+    program: 'Програма',
+    career: 'Переваги',
+    faq: 'Питання',
+  };
+
+  $$('.desktop-nav, .mobile-nav').forEach((nav) => {
+    const button = nav.classList.contains('mobile-nav')
+      ? '<a class="button" data-cta href="#pricing">Почати</a>'
+      : '';
+    nav.innerHTML = Object.entries(navLinks)
+      .map(([id, label]) => `<a href="#${id}">${label}</a>`)
+      .join('') + button;
+  });
+
+  $$('[data-price]').forEach((node) => { node.textContent = CONFIG.price; });
+
+  $$('[data-checkout]').forEach((link) => {
+    const url = new URL(CONFIG.checkoutUrl, window.location.href);
+    const current = new URLSearchParams(window.location.search);
+    current.forEach((value, key) => url.searchParams.set(key, value));
+    link.href = url.toString();
+  });
+
+  $$('[data-cta]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const target = $('#pricing');
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  const menuButton = $('.menu-button');
+  const mobileNav = $('.mobile-nav');
+  if (menuButton && mobileNav) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      document.body.classList.toggle('menu-open', isOpen);
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    $$('a', mobileNav).forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const header = $('.site-header');
+  const setHeader = () => header?.classList.toggle('scrolled', window.scrollY > 20);
+  setHeader();
+  window.addEventListener('scroll', setHeader, { passive: true });
+
+  const revealItems = $$('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add('visible'));
+  }
+
+  const countdown = $('#offer-countdown');
+  if (countdown) {
+    const storageKey = 'itstart-offer-deadline';
+    const tenMinutes = 10 * 60 * 1000;
+    let deadline = Number(sessionStorage.getItem(storageKey));
+
+    if (!deadline || deadline <= Date.now()) {
+      deadline = Date.now() + tenMinutes;
+      sessionStorage.setItem(storageKey, String(deadline));
+    }
+
+    let timer;
+    const renderCountdown = () => {
+      const remaining = Math.max(0, deadline - Date.now());
+      const totalSeconds = Math.ceil(remaining / 1000);
+      const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+      const seconds = String(totalSeconds % 60).padStart(2, '0');
+      countdown.textContent = `${minutes}:${seconds}`;
+      if (remaining <= 0 && timer) clearInterval(timer);
+    };
+
+    renderCountdown();
+    timer = setInterval(renderCountdown, 1000);
+  }
+
+  $$('[data-checkout]').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (typeof window.fbq === 'function') {
+        window.fbq('trackCustom', 'CheckoutIntent', {
+          product: 'ITStart 5-day QA program',
+          value: Number(CONFIG.price),
+          currency: 'UAH',
+        });
+      }
+    });
+  });
+
+  const mobileBarLabel = $('.mobile-buy-bar small');
+  if (mobileBarLabel) mobileBarLabel.textContent = '5-денна програма';
+
+  const yearNode = $('#current-year');
+  if (yearNode) yearNode.textContent = String(new Date().getFullYear());
+})();
