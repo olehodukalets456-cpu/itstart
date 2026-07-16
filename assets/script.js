@@ -1,5 +1,4 @@
 (() => {
-  // ЄДИНІ НАЛАШТУВАННЯ, ЯКІ ТРЕБА ЗМІНИТИ ПЕРЕД ЗАПУСКОМ
   const CONFIG = {
     checkoutUrl: 'https://academy.itstart.com.ua/',
     price: '990',
@@ -8,7 +7,6 @@
   const $ = (selector, context = document) => context.querySelector(selector);
   const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
 
-  // Додаткові стилі блоку команди.
   if (!$('link[data-team-styles]')) {
     const teamStyles = document.createElement('link');
     teamStyles.rel = 'stylesheet';
@@ -17,78 +15,85 @@
     document.head.appendChild(teamStyles);
   }
 
-  // Перший екран: замінюємо демо з багами на команду програми.
   const heroVisual = $('.hero-visual');
   if (heroVisual) {
-    heroVisual.setAttribute('aria-label', 'Команда програми ITStart');
+    heroVisual.setAttribute('aria-label', 'Команда курсу ITStart');
     heroVisual.innerHTML = `
-      <div class="hero-team">
-        <div class="hero-team-kicker">Команда ITStart</div>
-        <div class="hero-team-stage" aria-hidden="true">
-          <img class="hero-person hero-oleh" src="assets/oleh.svg" alt="">
-          <img class="hero-person hero-katya" src="assets/katya.svg" alt="">
+      <div class="hero-team-card">
+        <div class="hero-team-headline">Команда курсу</div>
+        <div class="hero-team-photos" aria-hidden="true">
+          <img class="hero-team-photo hero-team-photo-oleh" src="assets/oleh.svg" alt="">
+          <img class="hero-team-photo hero-team-photo-katya" src="assets/katya.svg" alt="">
         </div>
-        <div class="hero-team-meta">
-          <a class="team-chip" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener noreferrer">
-            <strong>Олег Матвієв</strong>
-            <span>Founder & Product Lead ↗</span>
+        <div class="hero-team-info-grid">
+          <a class="person-card person-card-link" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener noreferrer">
+            <div class="person-name">Олег Матвієв</div>
+            <div class="person-role">Засновник академії та головний куратор курсу</div>
+            <div class="person-note">Переглянути LinkedIn ↗</div>
           </a>
-          <div class="team-chip">
-            <strong>Катя</strong>
-            <span>Куратор програми</span>
+          <div class="person-card">
+            <div class="person-name">Катя</div>
+            <div class="person-role">Куратор навчального процесу</div>
+            <div class="person-note">Супровід студентів та організаційна підтримка</div>
           </div>
         </div>
       </div>
     `;
   }
 
-  // Прибираємо інтерактив «знайди баг» з першого екрана і весь окремий мінітест.
   const secondaryHeroButton = $('.hero-actions .button-ghost');
   if (secondaryHeroButton) {
     secondaryHeroButton.href = '#mentor';
-    secondaryHeroButton.textContent = 'Хто веде програму';
+    secondaryHeroButton.textContent = 'Команда курсу';
   }
+
   $('#challenge')?.remove();
 
-  // Оновлюємо блок команди нижче на сторінці.
   const mentorSection = $('#mentor');
   if (mentorSection) {
     mentorSection.innerHTML = `
-      <div class="container mentor-grid">
-        <div class="mentor-team-visual reveal">
-          <img class="mentor-team-person mentor-team-oleh" src="assets/oleh.svg" alt="Олег Матвієв — засновник і Product Lead ITStart">
-          <img class="mentor-team-person mentor-team-katya" src="assets/katya.svg" alt="Катя — куратор програми ITStart">
-          <div class="mentor-team-labels">
-            <div class="mentor-label">
-              <strong>Олег Матвієв</strong>
-              <span>Founder & Product Lead</span>
-            </div>
-            <div class="mentor-label">
-              <strong>Катя</strong>
-              <span>Куратор програми</span>
-            </div>
-          </div>
+      <div class="container mentor-section-inner">
+        <div class="section-team-heading reveal">
+          <div class="eyebrow eyebrow-dark"><span></span> Команда ITStart</div>
+          <h2>Хто стоїть за програмою</h2>
         </div>
-        <div class="mentor-copy reveal delay-1">
-          <div class="eyebrow eyebrow-dark"><span></span> Команда програми</div>
-          <h2>За навчанням стоять <em>люди, а не безіменна платформа.</em></h2>
-          <p class="mentor-intro">Олег відповідає за продуктову стратегію ITStart, структуру навчання та розвиток платформи. Його професійний профіль відкритий — поточну роль та інформацію про досвід можна переглянути у LinkedIn.</p>
-          <div class="mentor-points">
-            <div><strong>Продукт і програма</strong><span>Побудова навчального шляху, практичних матеріалів та цифрової платформи ITStart.</span></div>
-            <div><strong>Вебпроєкти</strong><span>Робота з цифровими продуктами, користувацькими сценаріями та запуском онлайн-проєктів.</span></div>
-            <div><strong>Відкрита репутація</strong><span>Публічний LinkedIn із роллю Founder & Product Lead at ITStart.</span></div>
-          </div>
-          <a class="text-link linkedin-link" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener noreferrer">Профіль Олега в LinkedIn</a>
-          <div class="curator-note">
-            <strong>Катя — куратор програми</strong>
-            <span>Допомагає з навчальною платформою, організаційними питаннями та проходженням завдань.</span>
-          </div>
+
+        <div class="mentor-cards reveal delay-1">
+          <article class="mentor-card mentor-card-primary">
+            <div class="mentor-photo-wrap mentor-photo-wrap-oleh">
+              <img class="mentor-photo" src="assets/oleh.svg" alt="Олег Матвієв — засновник академії та головний куратор курсу">
+            </div>
+            <div class="mentor-card-body">
+              <h3>Олег Матвієв</h3>
+              <p class="mentor-role">Засновник академії та головний куратор курсу</p>
+              <ul class="mentor-list">
+                <li>Відповідає за структуру навчання, логіку програми та якість матеріалів.</li>
+                <li>Формує практичні завдання, щоб студенти працювали не з «водою», а з реальними сценаріями.</li>
+                <li>Професійний профіль відкритий — поточну роль та досвід можна перевірити у LinkedIn.</li>
+              </ul>
+              <a class="mentor-link" href="https://www.linkedin.com/in/olehmatviev32/" target="_blank" rel="noopener noreferrer">LinkedIn Олега ↗</a>
+            </div>
+          </article>
+
+          <article class="mentor-card">
+            <div class="mentor-photo-wrap mentor-photo-wrap-katya">
+              <img class="mentor-photo" src="assets/katya.svg" alt="Катя — куратор навчального процесу">
+            </div>
+            <div class="mentor-card-body">
+              <h3>Катя</h3>
+              <p class="mentor-role">Куратор навчального процесу</p>
+              <ul class="mentor-list">
+                <li>Супроводжує студентів під час проходження програми.</li>
+                <li>Допомагає з організаційними питаннями та навігацією по платформі.</li>
+                <li>Стежить, щоб студент не «випав» з процесу та дійшов до результату.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     `;
   }
 
-  // Ціна та checkout URL
   $$('[data-price]').forEach((node) => { node.textContent = CONFIG.price; });
   $$('[data-checkout]').forEach((link) => {
     const url = new URL(CONFIG.checkoutUrl, window.location.href);
@@ -97,7 +102,6 @@
     link.href = url.toString();
   });
 
-  // Навігаційні CTA ведуть до ціни, checkout-кнопки — до платформи
   $$('[data-cta]').forEach((link) => {
     link.addEventListener('click', (event) => {
       const target = $('#pricing');
@@ -108,7 +112,6 @@
     });
   });
 
-  // Mobile menu
   const menuButton = $('.menu-button');
   const mobileNav = $('.mobile-nav');
   if (menuButton && mobileNav) {
@@ -124,13 +127,11 @@
     }));
   }
 
-  // Header state
   const header = $('.site-header');
   const setHeader = () => header?.classList.toggle('scrolled', window.scrollY > 20);
   setHeader();
   window.addEventListener('scroll', setHeader, { passive: true });
 
-  // Scroll reveal
   const revealItems = $$('.reveal');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -146,7 +147,6 @@
     revealItems.forEach((item) => item.classList.add('visible'));
   }
 
-  // Track CTA intent before redirect. Pixel event fires only if fbq exists.
   $$('[data-checkout]').forEach((link) => {
     link.addEventListener('click', () => {
       if (typeof window.fbq === 'function') {
