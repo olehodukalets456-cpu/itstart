@@ -185,18 +185,23 @@
   }
 
   .hero-team-photos {
-    min-height: 390px;
-  }
+  min-height: 440px;
+  margin-top: 0;
+}
 
-  .hero-team-photo-oleh {
-    left: -4%;
-    width: 47%;
-  }
+.hero-team-photo-oleh {
+  left: -13%;
+  bottom: 0;
+  width: 68%;
+  z-index: 1;
+}
 
-  .hero-team-photo-katya {
-    right: -6%;
-    width: 60%;
-  }
+.hero-team-photo-katya {
+  right: -14%;
+  bottom: 0;
+  width: 76%;
+  z-index: 2;
+}
 
   .hero-team-info-grid {
     grid-template-columns: 1fr;
