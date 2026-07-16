@@ -1,0 +1,338 @@
+/* ITStart team update: hero + program team */
+.hero-team {
+  position: relative;
+  min-height: 630px;
+  padding: 28px 26px 0;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 74% 16%, rgba(92,124,255,.35), transparent 31%),
+    radial-gradient(circle at 16% 72%, rgba(185,255,73,.16), transparent 35%),
+    linear-gradient(145deg, #151c2a, #0d111b 72%);
+  box-shadow: 0 42px 110px rgba(0,0,0,.38);
+}
+
+.hero-team::before {
+  content: "";
+  position: absolute;
+  inset: 17% 9% 8%;
+  border: 2px solid rgba(145,216,255,.32);
+  transform: rotate(7deg);
+  border-radius: 38px;
+}
+
+.hero-team::after {
+  content: "";
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  right: -90px;
+  top: 74px;
+  border: 1px solid rgba(185,255,73,.42);
+  transform: rotate(45deg);
+}
+
+.hero-team-kicker {
+  position: relative;
+  z-index: 6;
+  display: inline-flex;
+  padding: 9px 13px;
+  color: var(--ink);
+  background: var(--lime);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.hero-team-stage {
+  position: absolute;
+  inset: 65px 0 0;
+  overflow: hidden;
+}
+
+.hero-person {
+  position: absolute;
+  z-index: 3;
+  bottom: -8px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom;
+  filter: drop-shadow(0 24px 34px rgba(0,0,0,.32));
+  user-select: none;
+}
+
+.hero-oleh {
+  left: -3%;
+  height: 84%;
+  z-index: 3;
+}
+
+.hero-katya {
+  right: -1%;
+  height: 86%;
+  z-index: 4;
+}
+
+.hero-team-meta {
+  position: absolute;
+  z-index: 7;
+  left: 22px;
+  right: 22px;
+  bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.team-chip {
+  min-width: 0;
+  padding: 13px 14px;
+  color: var(--white);
+  background: rgba(11,15,24,.78);
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  transition: transform .18s ease, border-color .18s ease;
+}
+
+a.team-chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--lime);
+}
+
+.team-chip strong,
+.team-chip span {
+  display: block;
+}
+
+.team-chip strong {
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-chip span {
+  margin-top: 3px;
+  color: rgba(255,255,255,.58);
+  font-size: 11px;
+}
+
+/* Replace the old mentor placeholder with a real two-person team block. */
+.mentor-section {
+  background:
+    radial-gradient(circle at 4% 6%, rgba(92,124,255,.09), transparent 27%),
+    var(--paper);
+}
+
+.mentor-grid {
+  grid-template-columns: .96fr 1.04fr;
+}
+
+.mentor-team-visual {
+  position: relative;
+  min-height: 610px;
+  overflow: hidden;
+  background: #deddd5;
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.mentor-team-visual::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  left: -130px;
+  top: 40px;
+  border-radius: 50%;
+  background: rgba(185,255,73,.72);
+}
+
+.mentor-team-visual::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: -115px;
+  bottom: 20px;
+  border: 2px solid rgba(54,84,217,.3);
+  transform: rotate(45deg);
+}
+
+.mentor-team-person {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  max-width: none;
+  filter: drop-shadow(0 26px 34px rgba(11,15,24,.18));
+}
+
+.mentor-team-oleh {
+  left: -6%;
+  height: 91%;
+}
+
+.mentor-team-katya {
+  right: -7%;
+  height: 80%;
+  z-index: 3;
+}
+
+.mentor-team-labels {
+  position: absolute;
+  z-index: 5;
+  left: 22px;
+  right: 22px;
+  bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.mentor-label {
+  padding: 13px 14px;
+  color: white;
+  background: rgba(11,15,24,.86);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+}
+
+.mentor-label strong,
+.mentor-label span {
+  display: block;
+}
+
+.mentor-label strong {
+  font-size: 14px;
+}
+
+.mentor-label span {
+  margin-top: 3px;
+  color: rgba(255,255,255,.58);
+  font-size: 11px;
+}
+
+.mentor-copy .linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.mentor-copy .linkedin-link::after {
+  content: "↗";
+}
+
+.curator-note {
+  margin-top: 24px;
+  padding: 20px;
+  color: white;
+  background: var(--ink);
+  border-radius: 18px;
+}
+
+.curator-note strong,
+.curator-note span {
+  display: block;
+}
+
+.curator-note strong {
+  margin-bottom: 5px;
+  color: var(--lime);
+}
+
+.curator-note span {
+  color: rgba(255,255,255,.64);
+}
+
+@media (max-width: 1040px) {
+  .hero-team {
+    min-height: 600px;
+  }
+
+  .mentor-team-visual {
+    max-width: 720px;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-team {
+    min-height: 515px;
+    padding: 19px 16px 0;
+    border-radius: 24px;
+  }
+
+  .hero-team-stage {
+    inset: 52px 0 0;
+  }
+
+  .hero-oleh {
+    left: -17%;
+    height: 77%;
+  }
+
+  .hero-katya {
+    right: -14%;
+    height: 77%;
+  }
+
+  .hero-team-meta {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .team-chip {
+    padding: 10px;
+  }
+
+  .team-chip strong {
+    font-size: 12px;
+  }
+
+  .team-chip span {
+    font-size: 9px;
+  }
+
+  .mentor-team-visual {
+    min-height: 520px;
+  }
+
+  .mentor-team-oleh {
+    left: -20%;
+    height: 82%;
+  }
+
+  .mentor-team-katya {
+    right: -18%;
+    height: 73%;
+  }
+
+  .mentor-team-labels {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .mentor-label {
+    padding: 10px;
+  }
+
+  .mentor-label strong {
+    font-size: 12px;
+  }
+
+  .mentor-label span {
+    font-size: 9px;
+  }
+}
