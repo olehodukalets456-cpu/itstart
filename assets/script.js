@@ -1,6 +1,6 @@
 (() => {
   const CONFIG = {
-    checkoutUrl: 'https://academy.itstart.com.ua/',
+    checkoutUrl: 'https://academy.itstart.com.ua/testdrive',
     price: '990',
   };
 
@@ -16,15 +16,6 @@
     const current = new URLSearchParams(window.location.search);
     current.forEach((value, key) => url.searchParams.set(key, value));
     link.href = url.toString();
-  });
-
-  $$('[data-cta]').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      const target = $('#pricing');
-      if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
   });
 
   const menuButton = $('.menu-button');
