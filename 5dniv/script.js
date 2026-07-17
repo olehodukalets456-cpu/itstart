@@ -3,6 +3,20 @@
   const $ = (selector, context = document) => context.querySelector(selector);
   const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
 
+  // Load the latest mobile and CTA fixes without changing the main A-version.
+  if (!$('link[data-5dniv-fixes]')) {
+    const fixes = document.createElement('link');
+    fixes.rel = 'stylesheet';
+    fixes.href = 'fixes.css?v=2';
+    fixes.dataset['5dnivFixes'] = 'true';
+    document.head.appendChild(fixes);
+  }
+
+  // All vacancy examples in this B-version are presented as remote roles.
+  $$('.vacancy-meta').forEach((node) => {
+    node.textContent = 'Дистанційно';
+  });
+
   $$('[data-checkout]').forEach((link) => {
     const url = new URL(checkoutUrl, window.location.href);
     const params = new URLSearchParams(window.location.search);
@@ -38,6 +52,18 @@
     revealItems.forEach((item) => observer.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add('visible'));
+  }
+
+  // Do not cover the real purchase button with the sticky mobile bar.
+  const pricingSection = $('.pricing-section');
+  const mobileBuyBar = $('.mobile-buy-bar');
+  if (pricingSection && mobileBuyBar && 'IntersectionObserver' in window) {
+    const pricingObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        mobileBuyBar.classList.toggle('is-hidden', entry.isIntersecting);
+      });
+    }, { threshold: 0.12 });
+    pricingObserver.observe(pricingSection);
   }
 
   const countdown = $('#offer-countdown');
