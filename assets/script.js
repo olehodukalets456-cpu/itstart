@@ -7,6 +7,49 @@
   const $ = (selector, context = document) => context.querySelector(selector);
   const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
 
+  // Team copy
+  $$('.person-name').forEach((node) => {
+    if (node.textContent.trim() === 'Катя') node.textContent = 'Катерина';
+  });
+
+  $$('.person-card').forEach((card) => {
+    const name = $('.person-name', card)?.textContent.trim();
+    if (name === 'Катерина') {
+      const note = $('.person-note', card);
+      if (note) note.textContent = 'Координація навчання та підтримка студентів';
+    }
+  });
+
+  $$('.mentor-card').forEach((card) => {
+    const heading = $('h3', card);
+    if (!heading) return;
+
+    const name = heading.textContent.trim();
+    const list = $('.mentor-list', card);
+    if (!list) return;
+
+    if (name === 'Олег Матвієв') {
+      list.innerHTML = `
+        <li>13 років досвіду в IT.</li>
+        <li>5 років досвіду у викладанні онлайн.</li>
+        <li>Має власну IT-компанію.</li>
+        <li>Кар’єрний консультант для початківців.</li>
+      `;
+    }
+
+    if (name === 'Катя' || name === 'Катерина') {
+      heading.textContent = 'Катерина';
+      const image = $('img', card);
+      if (image) image.alt = 'Катерина — куратор навчального процесу';
+      list.innerHTML = `
+        <li>Координує навчальний процес і комунікацію зі студентами.</li>
+        <li>Допомагає з навчальною платформою та організаційними питаннями.</li>
+        <li>Стежить за прогресом і своєчасним проходженням матеріалів.</li>
+        <li>Підтримує студентів на кожному етапі навчання.</li>
+      `;
+    }
+  });
+
   $$('[data-price]').forEach((node) => {
     node.textContent = CONFIG.price;
   });
