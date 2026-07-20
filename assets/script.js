@@ -60,9 +60,7 @@
       intro.textContent = 'Це легка для опанування віддалена IT-професія: тестувальник перевіряє сайти й застосунки, знаходить помилки та допомагає команді випускати якісний продукт.';
     }
 
-    if (emphasis) {
-      emphasis.textContent = 'За 5 днів ви отримаєте мінімальний набір знань для старту й зрозумієте, як перейти до першої роботи в IT.';
-    }
+    if (emphasis) emphasis.remove();
   }
 
   const benefitContent = [
@@ -82,6 +80,17 @@
     if (heading) heading.textContent = content[0];
     if (text) text.textContent = content[1];
   });
+
+  const marketBenefits = $('.market-benefits');
+  if (marketBenefits && !$('.career-conclusion')) {
+    const conclusion = document.createElement('div');
+    conclusion.className = 'container career-conclusion reveal';
+    conclusion.innerHTML = `
+      <strong>Ми проведемо вас до першої роботи в IT.</strong>
+      <a class="button button-primary button-large" data-checkout href="${CONFIG.checkoutUrl}">Почати старт у новій професії</a>
+    `;
+    marketBenefits.insertAdjacentElement('afterend', conclusion);
+  }
 
   // Present all Work.ua examples as remote roles on both landing variants.
   $$('.vacancy-meta').forEach((node) => {
