@@ -6,13 +6,16 @@
 .career-heading>div,.career-copy{align-self:start!important;min-height:0!important}
 .career-heading h2{margin:10px 0 0!important;max-width:760px!important}
 .career-copy{padding:0!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important}
-.career-copy p{max-width:570px!important;margin:0 0 16px!important;font-size:18px!important;line-height:1.5!important}
-.career-copy strong{display:block!important;max-width:570px!important;font-size:25px!important;line-height:1.24!important}
+.career-copy p{max-width:570px!important;margin:0!important;font-size:18px!important;line-height:1.5!important}
+.career-copy strong{display:none!important}
 .market-benefits{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin-top:4px!important}
 .market-benefits article{display:flex!important;flex-direction:column!important;justify-content:flex-start!important;min-height:218px!important;padding:24px 22px 21px!important;border-radius:26px!important}
 .market-benefits article>span{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:48px!important;height:38px!important;flex:0 0 38px!important;margin:0 0 30px!important;border-radius:13px!important;font-size:17px!important;font-weight:850!important}
 .market-benefits article h3{margin:0 0 10px!important;font-size:29px!important;line-height:1.04!important}
 .market-benefits article p{margin:0!important;font-size:17px!important;line-height:1.42!important}
+.career-conclusion{display:flex;flex-direction:column;align-items:center;gap:20px;margin-top:30px;text-align:center}
+.career-conclusion strong{display:block;max-width:760px;color:var(--white);font-size:38px;line-height:1.08;letter-spacing:-.04em}
+.career-conclusion .button{min-width:340px}
 .salary-block{margin-top:42px!important}
 .salary-title{margin-bottom:22px!important}
 .salary-cta{margin-top:26px!important}
@@ -24,13 +27,15 @@
   .career-heading{grid-template-columns:1fr!important;gap:16px!important;margin-bottom:18px!important}
   .career-heading .eyebrow{margin-bottom:10px!important}
   .career-heading h2{margin:0!important;font-size:clamp(34px,10.5vw,50px)!important;line-height:.96!important;letter-spacing:-.04em!important}
-  .career-copy p{margin:0 0 12px!important;font-size:15px!important;line-height:1.45!important}
-  .career-copy strong{font-size:18px!important;line-height:1.3!important}
+  .career-copy p{margin:0!important;font-size:15px!important;line-height:1.45!important}
   .market-benefits{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin-top:0!important}
   .market-benefits article{min-height:154px!important;padding:14px 13px 13px!important;border-radius:21px!important}
   .market-benefits article>span{width:38px!important;height:30px!important;flex-basis:30px!important;margin-bottom:14px!important;border-radius:10px!important;font-size:13px!important}
   .market-benefits article h3{margin-bottom:7px!important;font-size:17px!important;line-height:1.08!important;letter-spacing:-.025em!important}
   .market-benefits article p{font-size:12.5px!important;line-height:1.32!important}
+  .career-conclusion{gap:16px;margin-top:22px;padding-left:20px;padding-right:20px}
+  .career-conclusion strong{font-size:27px;line-height:1.08}
+  .career-conclusion .button{width:100%;min-width:0}
   .salary-block{margin-top:28px!important}
   .salary-title{margin-bottom:16px!important}
   .salary-title h2{font-size:clamp(29px,8.4vw,40px)!important;line-height:1!important}
