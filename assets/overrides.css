@@ -19,6 +19,7 @@
 .salary-block{margin-top:42px!important}
 .salary-title{margin-bottom:22px!important}
 .salary-cta{margin-top:26px!important}
+.vacancy-entry-note{margin:-6px 0 16px;padding:10px 12px;border-radius:12px;background:rgba(92,124,255,.1);color:var(--blue-deep);font-size:13px;line-height:1.35;font-weight:750}
 .mobile-buy-bar{transition:opacity .22s ease,transform .22s ease}
 .mobile-buy-bar.is-hidden{opacity:0!important;transform:translateY(130%)!important;pointer-events:none!important}
 
@@ -40,4 +41,5 @@
   .salary-title{margin-bottom:16px!important}
   .salary-title h2{font-size:clamp(29px,8.4vw,40px)!important;line-height:1!important}
   .salary-cta{margin-top:18px!important}
+  .vacancy-entry-note{margin:-4px 0 14px;font-size:12px}
 }
