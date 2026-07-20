@@ -50,6 +50,12 @@
     }
   });
 
+  // About QA copy shared by both landing variants.
+  const aboutSummary = $('#about .large-copy .muted');
+  if (aboutSummary) {
+    aboutSummary.textContent = 'За 5 днів ви отримаєте набір знань для старту й зрозумієте, як виглядає робота тестувальника на практиці.';
+  }
+
   // Compact career block copy for mobile and desktop.
   const careerCopy = $('.career-copy');
   if (careerCopy) {
@@ -92,9 +98,20 @@
     marketBenefits.insertAdjacentElement('afterend', conclusion);
   }
 
-  // Present all Work.ua examples as remote roles on both landing variants.
+  // Work.ua block: remote format and honest entry-level context.
   $$('.vacancy-meta').forEach((node) => {
     node.textContent = 'Дистанційно';
+  });
+
+  $$('.vacancy-card').forEach((card) => {
+    if ($('.vacancy-entry-note', card)) return;
+    const meta = $('.vacancy-meta', card);
+    if (!meta) return;
+
+    const note = document.createElement('div');
+    note.className = 'vacancy-entry-note';
+    note.textContent = 'На ринку є вакансії для кандидатів без комерційного досвіду.';
+    meta.insertAdjacentElement('afterend', note);
   });
 
   $$('[data-price]').forEach((node) => {
