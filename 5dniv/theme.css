@@ -1,0 +1,43 @@
+:root{
+  --ink:#412a4c;
+  --ink-soft:#5b3a68;
+  --paper:#fff8f3;
+  --white:#ffffff;
+  --lime:#f26b5b;
+  --blue:#aa86ba;
+  --blue-deep:#765486;
+  --sky:#f0c8bf;
+  --line-dark:rgba(255,255,255,.16);
+  --line-light:rgba(65,42,76,.14);
+  --muted:#756d78;
+  --shadow:0 22px 70px rgba(65,42,76,.16);
+}
+
+body{background:var(--paper)}
+::selection{color:#fff;background:var(--coral,#f26b5b)}
+.site-header{background:rgba(65,42,76,.72);border-bottom-color:rgba(255,255,255,.1)}
+.site-header.scrolled{background:rgba(65,42,76,.95)}
+.button-primary{color:#fff;background:#f26b5b;box-shadow:0 12px 30px rgba(242,107,91,.22)}
+.button-primary:hover{background:#df5a4c}
+.button-ghost:hover{color:#f26b5b;border-color:#f26b5b}
+.hero-glow-one{background:radial-gradient(circle,#aa86ba,transparent 65%)}
+.hero-glow-two{background:radial-gradient(circle,rgba(242,107,91,.28),transparent 68%)}
+.hero-bonus{border-color:rgba(242,107,91,.58);background:linear-gradient(135deg,rgba(242,107,91,.22),rgba(170,134,186,.12));box-shadow:0 18px 42px rgba(65,42,76,.14)}
+.hero-bonus-label{background:#f26b5b;box-shadow:0 8px 22px rgba(242,107,91,.3)}
+.stats-section{background:#f2e9e4}
+.stats-heading .stats-blue{color:#f26b5b!important}
+.career-section{background:#412a4c}
+.vacancy-card{color:#412a4c}
+.vacancy-desc,.vacancy-source{color:#756d78}
+.countdown-wrap{background:#412a4c}
+.countdown-wrap strong{color:#f26b5b}
+.price-card{background:#412a4c}
+.site-footer{background:#2b2030}
+.mobile-buy-bar{background:#412a4c}
+.profession-card.accent-card{color:#412a4c;background:#f3c6bd}
+.profession-card.dark-card{background:#412a4c}
+.program-aside{background:#412a4c}
+.market-benefits article{background:#5b3a68}
+.market-benefits article>span{color:#fff;background:#f26b5b}
+.mentor-card-primary,.mentor-photo-wrap-oleh{background:#eadff0}
+.mentor-photo-wrap-katya{background:#f4d7d0}
