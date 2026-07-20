@@ -50,6 +50,44 @@
     }
   });
 
+  // Compact career block copy for mobile and desktop.
+  const careerCopy = $('.career-copy');
+  if (careerCopy) {
+    const intro = $('p', careerCopy);
+    const emphasis = $('strong', careerCopy);
+
+    if (intro) {
+      intro.textContent = 'Це легка для опанування віддалена IT-професія: тестувальник перевіряє сайти й застосунки, знаходить помилки та допомагає команді випускати якісний продукт.';
+    }
+
+    if (emphasis) {
+      emphasis.textContent = 'За 5 днів ви отримаєте мінімальний набір знань для старту й зрозумієте, як перейти до першої роботи в IT.';
+    }
+  }
+
+  const benefitContent = [
+    ['Швидкий старт', 'Можна зайти в IT без технічної освіти, коду й сильної англійської.'],
+    ['100% віддалено', 'Працюйте з дому або з будь-якої точки світу, де є інтернет.'],
+    ['Стабільний попит', 'Бізнесу постійно потрібні спеціалісти, які перевіряють якість продукту.'],
+    ['Зростання доходу', 'З досвідом і новими навичками дохід у QA зростає.'],
+    ['Зрозумілий вхід', 'Професію реально опанувати дорослим новачкам без перевантаження.'],
+    ['Розвиток далі', 'Після старту можна перейти в automation, аналітику, product або management.'],
+  ];
+
+  $$('.market-benefits article').forEach((card, index) => {
+    const content = benefitContent[index];
+    if (!content) return;
+    const heading = $('h3', card);
+    const text = $('p', card);
+    if (heading) heading.textContent = content[0];
+    if (text) text.textContent = content[1];
+  });
+
+  // Present all Work.ua examples as remote roles on both landing variants.
+  $$('.vacancy-meta').forEach((node) => {
+    node.textContent = 'Дистанційно';
+  });
+
   $$('[data-price]').forEach((node) => {
     node.textContent = CONFIG.price;
   });
@@ -99,6 +137,17 @@
     revealItems.forEach((item) => observer.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add('visible'));
+  }
+
+  const pricingSection = $('.pricing-section');
+  const mobileBuyBar = $('.mobile-buy-bar');
+  if (pricingSection && mobileBuyBar && 'IntersectionObserver' in window) {
+    const pricingObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        mobileBuyBar.classList.toggle('is-hidden', entry.isIntersecting);
+      });
+    }, { threshold: 0.12 });
+    pricingObserver.observe(pricingSection);
   }
 
   const countdown = $('#offer-countdown');
