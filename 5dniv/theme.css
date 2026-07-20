@@ -29,9 +29,6 @@ body{background:var(--paper)}
 .career-section{background:#412a4c}
 .vacancy-card{color:#412a4c}
 .vacancy-desc,.vacancy-source{color:#756d78}
-.countdown-wrap{background:#412a4c}
-.countdown-wrap strong{color:#f26b5b}
-.price-card{background:#412a4c}
 .site-footer{background:#2b2030}
 .mobile-buy-bar{background:#412a4c}
 .profession-card.accent-card{color:#412a4c;background:#f3c6bd}
@@ -41,3 +38,28 @@ body{background:var(--paper)}
 .market-benefits article>span{color:#fff;background:#f26b5b}
 .mentor-card-primary,.mentor-photo-wrap-oleh{background:#eadff0}
 .mentor-photo-wrap-katya{background:#f4d7d0}
+
+/* Distinct final offer palette for /5dniv */
+.variant-5dniv .pricing-section,
+.variant-5dniv .final-offer{background:linear-gradient(145deg,#eadff0 0%,#fff8f3 62%,#f7ded7 100%);color:#412a4c}
+.variant-5dniv .pricing-copy .eyebrow{color:#765486}
+.variant-5dniv .pricing-copy .eyebrow span{background:#f26b5b}
+.variant-5dniv .pricing-copy h2{color:#412a4c}
+.variant-5dniv .pricing-copy h2 em{color:#f26b5b}
+.variant-5dniv .pricing-copy p{color:#756d78}
+.variant-5dniv .offer-bonus{color:#412a4c;background:rgba(255,255,255,.72);border:1px solid rgba(242,107,91,.25);border-left:4px solid #f26b5b;box-shadow:0 14px 38px rgba(65,42,76,.08)}
+.variant-5dniv .offer-bonus strong{color:#f26b5b}
+.variant-5dniv .countdown-wrap{color:#fff;background:#765486;box-shadow:0 12px 28px rgba(65,42,76,.14)}
+.variant-5dniv .countdown-wrap strong{color:#ffd8d2}
+.variant-5dniv .price-card{color:#412a4c;background:#fff;border:1px solid rgba(65,42,76,.1);box-shadow:0 28px 70px rgba(65,42,76,.16)}
+.variant-5dniv .price-card .price-label{color:#765486}
+.variant-5dniv .price-card .price-badge{color:#fff;background:#765486}
+.variant-5dniv .price-card .old-price{color:#9a909c}
+.variant-5dniv .price-card .price strong,
+.variant-5dniv .price-card .price span{color:#412a4c}
+.variant-5dniv .price-card .price-sub,
+.variant-5dniv .price-card small{color:#756d78}
+.variant-5dniv .price-card ul li{color:#412a4c;border-color:rgba(65,42,76,.11)}
+.variant-5dniv .price-card ul li span{color:#f26b5b}
+.variant-5dniv .price-card .button-primary{color:#fff;background:#f26b5b;box-shadow:0 14px 30px rgba(242,107,91,.25)}
+.variant-5dniv .price-card .button-primary:hover{background:#df5a4c}
