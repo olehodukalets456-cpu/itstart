@@ -32,7 +32,7 @@ fbq('track','PageView');
 
 (() => {
   const CONFIG = {
-    checkoutUrl: 'https://academy.itstart.com.ua/testdrive',
+    checkoutUrl: 'https://academy.itstart.com.ua/https://academy.itstart.com.ua/',
     price: '990',
   };
 
